@@ -58,7 +58,7 @@ use App\Controllers\FrontPage;
 				<div class="col-lg-6 offcanvas-collapse">
 					<div class="row">
 						<div class="col-12">
-							<div class="row bg-black checkout-header">
+							<div class="row bg-black checkout-header d-lg-none">
 								<div class="col">
 									{!! FrontPage::headerLogoWithCart(WC()->cart->get_cart_contents_count()) !!}
 								</div>
