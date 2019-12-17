@@ -101,8 +101,9 @@ $(function() {
 		let timeout = setInterval(function() {
 			if (_this.hasClass('added')) {
 				total++;
-				$('.logo-simple').addClass('d-none');
-				$('.logo-cart').removeClass('d-none').find('.cart-total').text(total);
+				$('.simple-logo-container').addClass('d-none');
+				$('.logo-cart').removeClass('d-none');
+				$('.section-logo-container').removeClass('d-none').find('.cart-total').text(total);
 				clearInterval(timeout);
 			}
 		}, 100);
