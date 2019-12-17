@@ -1,0 +1,43 @@
+input::placeholder {
+	@apply font-sans font-700 text-lg opacity-50 text-black-400;
+}
+
+.checkcontainer {
+	@apply relative flex text-lg cursor-pointer;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	user-select: none;
+}
+
+.checkcontainer input {
+	@apply absolute opacity-0 cursor-pointer;
+}
+
+.checkmark {
+	@apply absolute top-0 left-0 w-5 h-5 bg-white-400 border-4 overflow-hidden;
+	margin-top: 3px;
+
+	&:after {
+		@apply absolute hidden border-solid border-black-400;
+		left: 3px;
+		top: -5px;
+		width: 9px;
+		height: 18px;
+		border-width: 0px 4px 4px 0px;
+		transform: rotate(45deg);
+
+		content: "";
+	}
+}
+
+.checkcontainer input:checked~.checkmark:after {
+	@apply block;
+}
+
+.error-label {
+	top: 70px;
+
+	@screen md {
+		top: -25px;
+	}
+}

@@ -1,0 +1,25 @@
+.aspect-ratio {
+	&:before {
+		display: block;
+		width: 100%;
+		content: '';
+	}
+
+	&-8\:10 {
+		&:before {
+			padding-top: 125%;
+		}
+	}
+}
+
+.md\:aspect-ratio {
+
+	@screen md {
+		&-9\:5 {
+			&:before {
+				padding-top: 55%;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+.transition-text {
+	transition: color 0.5s ease-in-out;
+
+	&:hover {
+		transition: color 0.5s ease-in-out;
+	}
+}
+
+.transition-bg {
+	transition: background-color 0.5s ease-in-out;
+
+	&:hover {
+		transition: background-color 0.5s ease-in-out;
+	}
+}
+
+.transition-opacity {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.transition-border-color {
+	transition: border-color 0.5s ease-in-out;
+}
