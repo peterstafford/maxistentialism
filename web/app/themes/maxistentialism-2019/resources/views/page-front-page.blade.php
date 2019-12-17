@@ -28,6 +28,19 @@ use App\Controllers\FrontPage;
 	
 
 		<header class="bg-black-400 pb-20">
+			<div class="fixed-top d-lg-none">
+				<div class="row bg-black checkout-header">
+					<div class="col">
+						{!! FrontPage::headerLogoWithCart(WC()->cart->get_cart_contents_count()) !!}
+					</div>
+					<div class="col text-center">
+						<button class="btn bg-light rounded-0 mt-3 open-link">Checkout</button>
+					</div>
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
 			<div class="px-6 max-w-8xl relative sm:px-10 md:pr-20 md:pl-48 md:pt-16 lg:pr-20 lg:pl-48 xl:px-48 xl:mx-auto">
 				<h1 class="color-a leading-snug text-h1 font-sans font-700 text-white-400 mb-16">
 					<div class="bg-black-400 md:absolute">
@@ -42,27 +55,39 @@ use App\Controllers\FrontPage;
 					</div>
 					{!! $headline !!}
 				</h1>
-				<div class="col-6 offcanvas-collapse px-0">
-					<h2 class="text-dark sidenav-title text-capitalize"><span class="sidenav-text"></span> <span class="close float-right">&times;</span></h2>
+				<div class="col-lg-6 offcanvas-collapse">
 					<div class="row">
-						<div class="choice unset danger-color border-4 open order">
-							<div class="card-header p-0  ml-4"><h5 class="title text-uppercase">Your Order</h5></div>
-							<div class="card-body mt-48">
-								<div class="container-fluid">
+						<div class="col-12">
+							<div class="row bg-black checkout-header">
+								<div class="col">
+									{!! FrontPage::headerLogoWithCart(WC()->cart->get_cart_contents_count()) !!}
+								</div>
+								<div class="col text-center">
+									<div class="mt-4 text-light">Checkout</div>
+								</div>
+								<div class="col">
+									<div class="close-offcanvas text-light text-right">&times;</div>
+								</div>
+							</div>
+						</div>
+						<div class="choice border-4 open order">
+							<div class="card-header p-lg-0"><div class="title text-uppercase">Your Order</div></div>
+							<div class="card-body position-relative">
+								<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+								<div class="container-fluid mt-lg-48">
 									<!-- Title -->
 									<h2 class="card-title text-left">Your Order</h2>
 									<!-- Text -->
 									<p class="card-text">{!! do_shortcode('[woocommerce_cart]') !!}</p>
-									<!-- Button -->
-									<a href="#" class="btn btn-primary">Button</a>
 									
 								</div>
 							</div>
 						</div>
-						<div class="choice unset danger-color border-4 collapsed shipping">
-							<div class="card-header p-0  ml-4"><h5 class="title text-uppercase">Shipping</h5></div>
-							<div class="card-body mt-48">
-								<div class="container-fluid">
+						<div class="choice border-4 collapsed shipping">
+							<div class="card-header p-lg-0"><div class="title text-uppercase">Shipping</div></div>
+							<div class="card-body position-relative">
+								<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+								<div class="container-fluid mt-lg-48">
 									<!-- Title -->
 									<h2 class="card-title text-left"><a>Card</a></h2>
 									<!-- Text -->
@@ -73,10 +98,11 @@ use App\Controllers\FrontPage;
 								</div>
 							</div>
 						</div>
-						<div class="choice unset danger-color border-4 collapsed billing">
-							<div class="card-header p-0  ml-4"><h5 class="title text-uppercase">Billing</h5></div>
-							<div class="card-body mt-48">
-								<div class="container-fluid">
+						<div class="choice border-4 collapsed billing">
+							<div class="card-header p-lg-0"><div class="title text-uppercase">Billing</div></div>
+							<div class="card-body position-relative">
+								<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+								<div class="container-fluid mt-lg-48">
 									<!-- Title -->
 									<h2 class="card-title text-left"><a>Card</a></h2>
 									<!-- Text -->
@@ -87,10 +113,11 @@ use App\Controllers\FrontPage;
 								</div>
 							</div>
 						</div>
-						<div class="choice unset danger-color border-4 collapsed submit-order">
-							<div class="card-header p-0  ml-4"><h5 class="title text-uppercase text-white">Submit Order</h5></div>
-							<div class="card-body mt-48">
-								<div class="container-fluid">
+						<div class="choice border-4 collapsed submit-order">
+							<div class="card-header p-lg-0"><div class="title text-uppercase text-white">Submit Order</div></div>
+							<div class="card-body position-relative">
+								<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close text-light">&times;</span></div>
+								<div class="container-fluid mt-lg-48">
 									
 								</div>
 								<!-- Title -->
@@ -192,8 +219,12 @@ use App\Controllers\FrontPage;
 			</div>
 		</section>
 		<section class="shop-section position-relative">
-			{!! FrontPage::sectionLogoWtihCart('shop', WC()->cart->get_cart_contents_count()) !!}
-			{!! FrontPage::sectionLogo('shop', $logo) !!}
+			<div class="{{ (WC()->cart->get_cart_contents_count() > 0 ? '' : ' d-none') }} section-logo-container">
+				{!! FrontPage::sectionLogoWtihCart('shop', WC()->cart->get_cart_contents_count()) !!}
+			</div>
+			<div class="{{ (WC()->cart->get_cart_contents_count() > 0 ? 'd-none' : '') }} simple-logo-container">
+				{!! FrontPage::sectionLogo('shop', $logo) !!}
+			</div>
 			<div class="container py-5">
 				<div class="row">
 					@foreach(FrontPage::getProducts() as $product)

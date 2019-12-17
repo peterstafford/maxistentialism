@@ -81,10 +81,12 @@ $(function() {
 		let linkName = $(this).data('link');
 		$('.offcanvas-collapse').addClass('open');
 		$('.sidenav-text').text(linkName);
+		$('header.bg-black-400 .fixed-top').addClass('d-none');
 	});
 
-	$('.offcanvas-collapse .sidenav-title .close').on('click', function(e) {
+	$('.offcanvas-collapse .sidenav-title .close, .close-offcanvas').on('click', function(e) {
 		$(this).closest('.offcanvas-collapse').removeClass('open');
+		$('header.bg-black-400 .fixed-top').removeClass('d-none');
 	});
 
 	

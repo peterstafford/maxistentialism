@@ -58,15 +58,17 @@ class FrontPage extends Controller {
 	
 	public static function sectionLogo($text, $src) {
 		$cart_count = WC()->cart->get_cart_contents_count();
-		return '<div class="logo-with-title position-absolute h-100 z-10 logo-simple'.($cart_count > 0 ? ' d-none' : '').'">
-			<img src="'.$src.'" alt="" class="d-inline mb-2"><span class="font-weight-bold text-uppercase">'.$text.'</span>
+		return '<div class="logo-with-title position-absolute h-100 z-10 logo-simple">
+			<div class="">
+				<img src="'.$src.'" alt="" class="d-none d-lg-inline mb-2"><span class="font-weight-bold text-uppercase">'.$text.'</span>
+			</div>
 		</div>';
 	}
 	public static function sectionLogoWtihCart($text, $count = 0) {
 		$cart_count = WC()->cart->get_cart_contents_count();
 
 		return '<div class="logo-with-title position-absolute h-100 z-10 logo-cart'.($cart_count > 0 ? '' : ' d-none').'" data-cart_count="'.$cart_count.'">
-			<div class="img-container d-inline-block text-white px-2 text-uppercase text-center">
+			<div class="img-container d-none d-lg-inline-block text-white px-2 text-uppercase text-center">
 				<div class="logo-items">
 					<img src="'.\App\asset_path('images/bullet 3@1x.png').'" class="d-inline-block bullet-3 w-25">
 					<img src="'.\App\asset_path('images/bullet 4@1x.png').'" class="d-inline-block bullet-4 w-25">
@@ -78,6 +80,23 @@ class FrontPage extends Controller {
 				<div class="checkout-text"><a href="javascript:void(0);" class="text-white open-link">Checkout</a></div>
 			</div>
 			<span class="font-weight-bold text-uppercase">'.$text.'</span>
+		</div>';
+	}
+
+	public static function headerLogoWithCart( $count = 0) {
+		$cart_count = WC()->cart->get_cart_contents_count();
+
+		return '<div class="logo-with-title h-100 z-10 logo-cart'.($cart_count > 0 ? '' : ' d-none').'" data-cart_count="'.$cart_count.'">
+			<div class="img-container d-inline-block text-white px-2 text-uppercase text-center">
+				<div class="logo-items">
+					<img src="'.\App\asset_path('images/bullet 3@1x.png').'" class="d-inline-block bullet-3 w-25">
+					<img src="'.\App\asset_path('images/bullet 4@1x.png').'" class="d-inline-block bullet-4 w-25">
+					<span class="cart-total">'.$count.'</span>
+					<img src="'.\App\asset_path('images/bullet 8@1x.png').'" class="d-inline-block bullet-8 w-25">
+					<img src="'.\App\asset_path('images/bullet 2@1x.png').'" class="d-inline-block bullet-2 w-25">
+				</div>
+				<div class="cart-text">Cart</div>
+			</div>
 		</div>';
 	}
 

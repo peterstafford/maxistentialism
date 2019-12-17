@@ -31,7 +31,7 @@
 		@endforeach
 	</div>
 	<nav>
-		<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+		<div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
 			<a class="nav-item nav-link active p-2 p-sm-3 p-md-4" id="podcast-tab" data-toggle="tab" href="#podcast" role="tab" aria-controls="podcast" aria-selected="true">
 				<img src="@asset('/images/podcast ico@1x.png')" alt="" class="mx-auto img-responsive">
 				<h2>Podcast</h2>
