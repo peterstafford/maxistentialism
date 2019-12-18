@@ -110,4 +110,13 @@ function remove_menus() {
 }
 add_action('admin_menu', 'remove_menus');
 
+function update_cart() {
+    echo do_shortcode('[woocommerce_cart]');
+    exit;
+}
+add_action( 'wp_ajax_update_cart', 'update_cart', 10 );
+add_action( 'wp_ajax_nopriv_update_cart', 'update_cart', 10 );
 
+add_filter( 'woocommerce_order_button_text', function() {
+    return 'SUBMIT ORDER';
+} );

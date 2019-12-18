@@ -90,10 +90,13 @@ $(function() {
 	});
 
 	
-	$(".choice").on("click", function() {
-		$(".choice").removeClass("open unset ").addClass("collapsed");
-		$(this).removeClass("collapsed").addClass("open");
+	$(".choice .card-header").on("click", function(e) {
+		e.stopPropagation();
+		$(".choice").removeClass("open").addClass("collapsed");
+		$(this).closest(".choice").removeClass("collapsed").addClass("open");
 	});
+
+
 	let total = $('.logo-cart').data('cart_count') || 0;
 	$('.ajax_add_to_cart').on('click', function() {
 		let _this = $(this);
@@ -101,6 +104,8 @@ $(function() {
 		let timeout = setInterval(function() {
 			if (_this.hasClass('added')) {
 				total++;
+				$('header .fixed-top').removeClass('d-none').find('.cart-total').text(total);
+				$('.checkout-header').find('.cart-total').text(total);
 				$('.simple-logo-container').addClass('d-none');
 				$('.logo-cart').removeClass('d-none');
 				$('.section-logo-container').removeClass('d-none').find('.cart-total').text(total);
@@ -111,5 +116,12 @@ $(function() {
 		// $.post(site_url.ajaxurl, {'action': 'update_cart'}).done(function(response) {
 		// 	$('.sidenav-title').find('.choice.order').find('.container-fluid .card-text').html(response);
 		// });
+	});
+
+	// checkout tabs
+	$('.next-tab').on('click', function(e) {
+		console.log(e);
+		$('.choice').removeClass('open').addClass('collapsed');
+		$(this).closest('.choice').next('.choice').removeClass('collapsed').addClass('open');
 	});
 });

@@ -132,8 +132,8 @@ a:hover {
 .offcanvas-collapse {
 	position: fixed;
 	top: 0;/* Height of navbar */
-	bottom: 0;
 	left: 0%;
+	height: 100%;
 	color: #555;
 	transform: translateX(-100%);
 	padding-right: 1rem;
@@ -182,6 +182,14 @@ a:hover {
 		}
 		&.order {
 			background-color: #d9c3ed;
+			.cart_totals {
+				float: none !important;
+				width: auto;
+				overflow: hidden;
+				.wc-proceed-to-checkout {
+					display: none;
+				}
+			}
 		}
 		&.shipping {
 			background-color: #91d3ed;
@@ -192,12 +200,50 @@ a:hover {
 		&.submit-order {
 			background-color: #000;
 			color: #fff;
+			#payment {
+				background: transparent;
+				#place_order {
+					width: 100%;
+				    background: #fff;
+				    color: #000;
+				    font-size: 1rem;
+				    font-weight: bold;
+				    margin-top: 1em;
+		    		padding: 1em;
+				}
+			}
+			.woocommerce-checkout-review-order-table {
+				.order-total {
+				    font-size: 2em;
+				}
+				th {
+				    padding-right: 5%;
+				}
+			}
 		}
 
 		.card-header {
 		    cursor: pointer;
 		}
 
+		.next-tab {
+		    padding: 1em;
+		    margin-top: 3em;
+		}
+
+		input::placeholder {
+		  color: #000;
+		}
+		input[type=text] {
+			border-color: #000;
+		}
+
+		select {
+			border-color: #000;
+			height: auto;
+			color: #000 !important;
+    		font-weight: bold;
+		}
 	}
 	
 }
@@ -222,7 +268,7 @@ a:hover {
 
 			
 			&.open {
-			    width: 86.4%;		    
+			    width: calc(100% - 96px);		    
 				.card-header {
 					margin-right: 1em;
 				}
@@ -236,7 +282,7 @@ a:hover {
 			}
 
 			&.collapsed {
-			    width: 35px;
+			    width: 2em;
 				.card-header {
 					width: 100%;	
 				}
@@ -250,11 +296,11 @@ a:hover {
 	.offcanvas-collapse {
 		.choice {
 			&.open {
-			    height: 75.4vh;
+			    height: calc(100% - 168px);
 			    overflow: auto;
 			}
 			&.collapsed {
-			    height: 38px;
+			    height: 2em;
 			}
 			transition: height 0.2s;
 		    width: 100% !important;
@@ -266,6 +312,7 @@ a:hover {
 			.close {
 				display: none;
 			}
+
 		}
 	}
 }
