@@ -134,4 +134,11 @@ class FrontPage extends Controller {
 		return $pages;
 	}
 
+	public static function getCart() {
+		$cart = WC()->cart->get_cart();
+
+		return $cart;
+
+	}
+
 }

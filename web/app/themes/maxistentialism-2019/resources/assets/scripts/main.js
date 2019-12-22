@@ -75,7 +75,47 @@ new Vue({
 });
 
 $ = jQuery.noConflict();
+function validateTab(el) {
+	let required = $(el).find('.required');
 
+	$(required).on('input focusout keypress change', function(e) {
+		let filled = $(el).find('.form-group.filled');
+		if ($(e.target).is('select')) {
+			if (!$(e.target).find('option:selected').val() == '') {
+				$(e.target).closest('.form-group').addClass('filled');
+			} else {
+				$(e.target).closest('.form-group').removeClass('filled');
+			}
+		}
+
+		if ($(e.target).is('input')) {
+			if (!$(e.target).val() == '') {
+				$(e.target).closest('.form-group').addClass('filled');
+			} else {
+				$(e.target).closest('.form-group').removeClass('filled');
+			}
+		}
+
+		if ($(e.target).is('textarea')) {
+			if (!$(e.target).val() == '') {
+				$(e.target).closest('.form-group').addClass('filled');
+			} else {
+				$(e.target).closest('.form-group').removeClass('filled');
+			}
+		}
+
+		if (required.length == filled.length) {
+			$(el).find('.btn.btn-block').addClass('next-tab').prop('disabled', false);
+			$(el).find('.card-header').addClass('next-tab-bar');
+			$(el).next('.choice').find('.card-header').addClass('next-tab-bar');
+		} else {
+			$(el).find('.btn.btn-block').removeClass('next-tab').prop('disabled', true);
+			$(el).find('.card-header').removeClass('next-tab-bar');
+			$(el).next('.choice').find('.card-header').removeClass('next-tab-bar');
+		}
+	});
+
+}
 $(function() {
 	$('.open-link').on('click', function() {
 		let linkName = $(this).data('link');
@@ -90,7 +130,7 @@ $(function() {
 	});
 
 	
-	$(".choice .card-header").on("click", function(e) {
+	$(document).on("click", ".choice .card-header.next-tab-bar", function(e) {
 		e.stopPropagation();
 		$(".choice").removeClass("open").addClass("collapsed");
 		$(this).closest(".choice").removeClass("collapsed").addClass("open");
@@ -119,9 +159,27 @@ $(function() {
 	});
 
 	// checkout tabs
-	$('.next-tab').on('click', function(e) {
-		console.log(e);
+	$(document).on('click', '.next-tab', function(e) {
 		$('.choice').removeClass('open').addClass('collapsed');
 		$(this).closest('.choice').next('.choice').removeClass('collapsed').addClass('open');
+	});
+
+
+	// tabs validation
+	validateTab('.choice.shipping');
+	validateTab('.choice.billing');
+
+	// Ajax form on checkout form
+	let checkoutForm = $('form.woocommerce-checkout');
+	checkoutForm.ajaxForm({
+		beforeSubmit: function(formData, $form, options) {
+			submitBtn = $($form).find('#place_order');
+			submitBtnHtml = submitBtn.html();
+			submitBtn.prop('disabled', true).html('Please Wait...')
+		},
+		success: function(response, textStatus, jqXHR, $form) {
+			$($form).find('#place_order').prop('disabled', false).html(submitBtnHtml);
+			$($form).find('#result').html(response.messages);
+		}
 	});
 });
