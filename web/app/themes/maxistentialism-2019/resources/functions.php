@@ -120,3 +120,8 @@ add_action( 'wp_ajax_nopriv_update_cart', 'update_cart', 10 );
 add_filter( 'woocommerce_order_button_text', function() {
     return 'SUBMIT ORDER';
 } );
+
+define('WOOCOMMERCE_CHECKOUT', true);
+$wc_stripe = new WC_Gateway_Stripe;
+
+// add_action('wp_enqueue_scripts', [$wc_stripe, 'payment_scripts']);

@@ -26,6 +26,7 @@ use App\Controllers\FrontPage;
 		$links_email = carbon_get_post_meta(get_the_ID(), 'links_email');
 
 		$is_empty_cart = WC()->cart->is_empty();
+
 		// $is_empty_cart = true;
 	@endphp
 
@@ -49,7 +50,7 @@ use App\Controllers\FrontPage;
 						<div class="py-8 md:hidden">
 							{{svg('header-logo')}}
 						</div>
-						<div class="hidden head-logo md:block md:absolute text-center">
+						<div class="hidden head-logo md:block md:absolute text-center mt-0">
 							{{-- <a href="javascript:void(0);" class="open-cart open-link mr-2" data-link="cart">Cart</a>
 							<a href="javascript:void(0);" class="open-checkout open-link" data-link="checkout">Checkout</a> --}}
 							{{svg('header-logo-2')}}
@@ -73,146 +74,131 @@ use App\Controllers\FrontPage;
 									</div>
 								</div>
 							</div>
-								<div class="choice border-4 open order">
-									<div class="card-header p-lg-0 {{!$is_empty_cart ? 'next-tab-bar' : ''}}"><div class="title text-uppercase">Your Order</div></div>
-									<div class="card-body position-relative">
-										<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
-										<div class="container-fluid lg:mt-10">
-											<!-- Title -->
-											<h2 class="card-title text-left">Your Order</h2>
-											<!-- Text -->
-											<div class="card-text overflow-hidden">
-												{!! do_shortcode('[woocommerce_cart]') !!}
-
-												<button class="btn rounded-0 bg-black-400 text-light btn-block {{!$is_empty_cart ? 'next-tab' : ''}}" {{ $is_empty_cart ? 'disabled' : '' }} type="button">NEXT</button>
-											</div>
+							<div class="choice border-4 open order">
+								<div class="card-header p-lg-0 {{!$is_empty_cart ? 'next-tab-bar' : ''}}"><div class="title text-uppercase">Your Order</div></div>
+								<div class="card-body position-relative">
+									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+									<div class="container-fluid lg:mt-10">
+										<!-- Title -->
+										<h2 class="card-title text-left">Your Order</h2>
+										<!-- Text -->
+										<div class="card-text overflow-hidden">
+											{!! do_shortcode('[woocommerce_cart]') !!}
+											<button class="btn rounded-0 bg-black-400 text-light btn-block {{!$is_empty_cart ? 'next-tab' : ''}}" {{ $is_empty_cart ? 'disabled' : '' }} type="button">NEXT</button>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="choice border-4 collapsed shipping">
+								<div class="card-header p-lg-0"><div class="title text-uppercase">Shipping</div></div>
+								<div class="card-body position-relative">
+									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+									<div class="container-fluid lg:mt-10">
+										<!-- Title -->
+										<h2 class="card-title text-left">Tell me where<br>to ship this.</h2>
+										<!-- Text -->
+										<div class="card-text overflow-hidden">
 											
-										</div>
-									</div>
-								</div>
-								<div class="choice border-4 collapsed shipping">
-									<div class="card-header p-lg-0"><div class="title text-uppercase">Shipping</div></div>
-									<div class="card-body position-relative">
-										<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
-										<div class="container-fluid lg:mt-10">
-											<!-- Title -->
-											<h2 class="card-title text-left">Tell me where to <br>to ship this.</h2>
-											<!-- Text -->
-											<div class="card-text overflow-hidden">
-												
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="First Name *" name="billing_first_name">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Last Name *" name="billing_last_name">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Company (optional)" name="billing_company">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Address *" name="billing_address_1">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Apartment, suite, unit etc. (optional)" name="billing_address_2">
-												</div>
-												<div class="form-group">
-													<select name="billing_country" class="form-control required border-4 rounded-0 bg-transparent p-3 text-dark">
-														<option value="">Select a country…</option>
-														@foreach(WC()->countries->get_countries() as $code => $name) 
-															<option value="{{$code}}">{{$name}}</option>
-														@endforeach
-													</select>
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="City *" name="billing_city">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="State *" name="billing_state">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Postcode *" name="billing_postcode">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Phone *" name="billing_phone">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Email *" name="billing_email">
-												</div>
-												<button class="btn rounded-0 bg-black-400 text-light btn-block" disabled type="button">NEXT</button>
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="First Name *" name="shipping_first_name">
 											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="choice border-4 collapsed billing">
-									<div class="card-header p-lg-0"><div class="title text-uppercase">Billing</div></div>
-									<div class="card-body position-relative">
-										<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
-										<div class="container-fluid lg:mt-10">
-											<!-- Title -->
-											<h2 class="card-title text-left">Tell me who's <br>paying for this.</h2>
-											<!-- Text -->
-											<div class="card-text overflow-hidden">
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="First Name *" name="shipping_first_name">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Last Name *" name="shipping_last_name">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Company (optional)" name="shipping_company">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Address *" name="shipping_address_1">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Apartment, suite, unit etc. (optional)" name="shipping_address_2">
-												</div>
-												<div class="form-group">
-													<select name="billing_country" class="form-control required border-4 rounded-0 bg-transparent p-3 text-dark">
-														<option value="">Select a country…</option>
-														@foreach(WC()->countries->get_countries() as $code => $name) 
-															<option value="{{$code}}">{{$name}}</option>
-														@endforeach
-													</select>
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="City *" name="shipping_city">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="State *" name="shipping_state">
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Postcode *" name="shipping_postcode">
-												</div>
-												<button class="btn rounded-0 bg-black-400 text-light btn-block" disabled type="button">NEXT</button>
-												{{-- {{wp_create_nonce( 'wc_checkout_form' )}} --}}
-												{{-- {!! wp_nonce_field( 'wc_checkout_form' ) !!} --}}
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Last Name *" name="shipping_last_name">
 											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="choice border-4 collapsed submit-order">
-									<div class="card-header p-lg-0"><div class="title text-uppercase text-white">Submit Order</div></div>
-									<div class="card-body position-relative">
-										<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close text-light">&times;</span></div>
-										<div class="container-fluid lg:mt-10">
-											<!-- Title -->
-											<h2 class="card-title text-left">Make sure this <br>looks right.</h2>
-											<!-- Text -->
-											<div class="card-text overflow-hidden">
-												<div class="container-fluid">
-													<div id="result"></div>
-													{{do_action( 'woocommerce_checkout_order_review' )}}
-												</div>
-												{{-- <input type="hidden" name="payment_method" value="">
-												<input type="hidden" name="woocommerce-process-checkout-nonce" value="{{wp_create_nonce( 'wc_checkout_form' )}}"> --}}
+											<div class="form-group">
+												<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Company (optional)" name="shipping_company">
 											</div>
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Address *" name="shipping_address_1">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Apartment, suite, unit etc. (optional)" name="shipping_address_2">
+											</div>
+											<div class="form-group">
+												<select name="shipping_country" class="form-control required border-4 rounded-0 bg-transparent p-3 text-dark">
+													<option value="">Select a country…</option>
+													@foreach(WC()->countries->get_countries() as $code => $name) 
+														<option value="{{$code}}">{{$name}}</option>
+													@endforeach
+												</select>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="City *" name="shipping_city">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="State *" name="shipping_state">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control required border-4 rounded-0 bg-transparent p-4 text-dark" placeholder="Postcode *" name="shipping_postcode">
+											</div>
+											<button class="btn rounded-0 bg-black-400 text-light btn-block" disabled type="button">NEXT</button>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="choice border-4 collapsed billing">
+								<div class="card-header p-lg-0"><div class="title text-uppercase">Billing</div></div>
+								<div class="card-body position-relative">
+									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
+									<div class="container-fluid lg:mt-10">
+										<!-- Title -->
+										<h2 class="card-title text-left">Tell me who's <br>paying for this.</h2>
+										<!-- Text -->
+										<div class="card-text overflow-hidden">
+											<div id="wc-stripe-cc-form" class="wc-credit-card-form wc-payment-form">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="stripe-card-element">Card Number <span class="required">*</span></label>
+															<div id="stripe-card-element" class="wc-stripe-elements-field form-control required border-4 rounded-0 bg-transparent p-2 text-dark h-auto"></div>
+															<i alt="Credit Card" class="stripe-credit-card-brand stripe-card-brand"></i>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="stripe-exp-element">Expiry Date <span class="required">*</span></label>
+															<div id="stripe-exp-element" class="wc-stripe-elements-field form-control required border-4 rounded-0 bg-transparent p-2 text-dark h-auto"></div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="stripe-cvc-element">Card Code (CVC) <span class="required">*</span></label>
+															<div id="stripe-cvc-element" class="wc-stripe-elements-field form-control required border-4 rounded-0 bg-transparent p-2 text-dark h-auto"></div>
+														</div>
+													</div>
+												</div>
+												<div role="alert" class="stripe-source-errors"></div>
+											</div>
+											{{-- {!! $GLOBALS['wc_stripe']->elements_form() !!} --}}
+											<button class="btn rounded-0 bg-black-400 text-light btn-block" disabled type="button">NEXT</button>
+											{{-- {{wp_create_nonce( 'wc_checkout_form' )}} --}}
+											{{-- {!! wp_nonce_field( 'wc_checkout_form' ) !!} --}}
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="choice border-4 collapsed submit-order">
+								<div class="card-header p-lg-0"><div class="title text-uppercase text-white">Submit Order</div></div>
+								<div class="card-body position-relative">
+									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close text-light">&times;</span></div>
+									<div class="container-fluid lg:mt-10">
+										<!-- Title -->
+										<h2 class="card-title text-left">Make sure this <br>looks right.</h2>
+										<!-- Text -->
+										<div class="card-text overflow-hidden">
+											<div class="container-fluid">
+												<div id="result"></div>
+												{{do_action( 'woocommerce_checkout_order_review' )}}
+											</div>
+											{{-- <input type="hidden" name="payment_method" value="">
+											<input type="hidden" name="woocommerce-process-checkout-nonce" value="{{wp_create_nonce( 'wc_checkout_form' )}}"> --}}
 										</div>
 									</div>
 								</div>
-							
+							</div>
 						</div>
 					</form>
 				</div>
