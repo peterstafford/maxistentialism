@@ -121,7 +121,10 @@ add_filter( 'woocommerce_order_button_text', function() {
     return 'SUBMIT ORDER';
 } );
 
-define('WOOCOMMERCE_CHECKOUT', true);
+if (is_home() || is_front_page()) {
+    
+}
+    define('WOOCOMMERCE_CHECKOUT', true);
 $wc_stripe = new WC_Gateway_Stripe;
 
 // add_action('wp_enqueue_scripts', [$wc_stripe, 'payment_scripts']);

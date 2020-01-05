@@ -75,45 +75,96 @@ new Vue({
 });
 
 $ = jQuery.noConflict();
+
+function isElementLoaded(el, className, cb, timer = 100) {
+	let promise = new Promise(function(resolve, reject) {
+		let timeOut = setInterval(function() {
+			if (el.hasClass(className)) {
+				cb(el);
+				clearInterval(timeOut);
+				resolve(el);
+			}
+		}, timer);
+	});
+	return promise;
+}
 function validateTab(el) {
 	let required = $(el).find('.required');
 
 	$(required).on('input focusout keypress change', function(e) {
 		let filled = $(el).find('.form-group.filled');
-		if ($(e.target).is('select')) {
-			if (!$(e.target).find('option:selected').val() == '') {
-				$(e.target).closest('.form-group').addClass('filled');
+		let $target = $(e.target);
+		if ($target.is('select')) {
+			if (!$target.find('option:selected').val() == '') {
+				$target.closest('.form-group').addClass('filled');
 			} else {
-				$(e.target).closest('.form-group').removeClass('filled');
+				$target.closest('.form-group').removeClass('filled');
 			}
 		}
 
-		if ($(e.target).is('input')) {
-			if (!$(e.target).val() == '') {
-				$(e.target).closest('.form-group').addClass('filled');
+		if ($target.is('input') || $target.is('textarea')) {
+			if (!$target.val() == '') {
+				$target.closest('.form-group').addClass('filled');
 			} else {
-				$(e.target).closest('.form-group').removeClass('filled');
+				$target.closest('.form-group').removeClass('filled');
 			}
 		}
 
-		if ($(e.target).is('textarea')) {
-			if (!$(e.target).val() == '') {
-				$(e.target).closest('.form-group').addClass('filled');
-			} else {
-				$(e.target).closest('.form-group').removeClass('filled');
-			}
+		if ($target.closest('.form-group').hasClass('filled')) {
+			$target.closest('.form-group').find('input[type="hidden"]').attr('value', $target.val());			
+		} else {
+			$target.closest('.form-group').find('input[type="hidden"]').attr('value', '');			
 		}
 
 		if (required.length == filled.length) {
-			$(el).find('.btn.btn-block').addClass('next-tab').prop('disabled', false);
+			$(el).find('.btn.btn-block').prop('disabled', false);
 			$(el).find('.card-header').addClass('next-tab-bar');
 			$(el).next('.choice').find('.card-header').addClass('next-tab-bar');
 		} else {
-			$(el).find('.btn.btn-block').removeClass('next-tab').prop('disabled', true);
+			$(el).find('.btn.btn-block').prop('disabled', true);
 			$(el).find('.card-header').removeClass('next-tab-bar');
 			$(el).next('.choice').find('.card-header').removeClass('next-tab-bar');
 		}
 	});
+
+}
+
+function mutationCB(mutationsList, observer) {
+	$('#wc-stripe-cc-form').trigger('stripe-element-change');
+}
+async function validateTabStrip(stripeTab) {
+	let config = { attributes: true, childList: false, subtree: false };
+	let tab = $(stripeTab);
+	let required = tab.find('.wc-stripe-elements-field');
+	let stripe_card = tab.find( '#stripe-card-element' );
+	let stripe_exp 	= tab.find( '#stripe-exp-element' );
+	let stripe_cvc 	= tab.find( '#stripe-cvc-element' );
+
+	// Create an observer instance linked to the callback function
+	const observer = new MutationObserver(mutationCB);
+
+	// Start observing the target node for configured mutations
+	observer.observe(stripe_card[0], config);
+	observer.observe(stripe_exp[0], config);
+	observer.observe(stripe_cvc[0], config);
+
+	$('#wc-stripe-cc-form').on('stripe-element-change', function(e) {
+		if ($('#payment').length) {
+			$('#payment').find('.payment_methods').remove();
+		}
+
+		let filled = $(e.target).find('.wc-stripe-elements-field.StripeElement--complete');
+		if (filled.length == 3) {
+			$(tab).find('.btn.btn-block').prop('disabled', false);
+			$(tab).find('.card-header').addClass('next-tab-bar');
+			$(tab).next('.choice').find('.card-header').addClass('next-tab-bar');
+		} else {
+			$(tab).find('.btn.btn-block').prop('disabled', true);
+			$(tab).find('.card-header').removeClass('next-tab-bar');
+			$(tab).next('.choice').find('.card-header').removeClass('next-tab-bar');
+		}
+	});
+	// let filled = tab.find('.wc-stripe-elements-field.StripeElement--complete');
 
 }
 $(function() {
@@ -167,19 +218,84 @@ $(function() {
 
 	// tabs validation
 	validateTab('.choice.shipping');
-	validateTab('.choice.billing');
+	validateTabStrip('.choice.billing');
 
 	// Ajax form on checkout form
-	let checkoutForm = $('form.woocommerce-checkout');
+	let checkoutForm = $('form.checkout-ajax');
+	
+	if (checkoutForm.find('#payment').length) {
+		checkoutForm.find('#payment .payment_methods').remove();
+	}
+	$( document.body ).trigger('updated_checkout');
+	let submitBtn = $(checkoutForm).find('#place_order');
+	let submitBtnHtml = submitBtn.html();
 	checkoutForm.ajaxForm({
 		beforeSubmit: function(formData, $form, options) {
-			submitBtn = $($form).find('#place_order');
-			submitBtnHtml = submitBtn.html();
-			submitBtn.prop('disabled', true).html('Please Wait...')
+			submitBtn.prop('disabled', true).html('Please Wait...');
 		},
 		success: function(response, textStatus, jqXHR, $form) {
-			$($form).find('#place_order').prop('disabled', false).html(submitBtnHtml);
-			$($form).find('#result').html(response.messages);
+			$(checkoutForm).find('#place_order').prop('disabled', false).html(submitBtnHtml);
+			$(checkoutForm).find('#result').html(response.messages);
 		}
 	});
+
+	let quantityArrows = `<div class="quantity-nav row">
+		<div class="quantity-button quantity-up col-1">+</div>
+		<div class="quantity-value col-1">1</div>
+		<div class="quantity-button quantity-down col-1">-</div>
+	</div>`;
+	let productQtyContainer = '.offcanvas-collapse .woocommerce table.shop_table .product-quantity .quantity';
+	$(productQtyContainer).append(quantityArrows);
+
+	$(productQtyContainer).each(function() {
+		var spinner = $(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		qtyContainer = spinner.find('.quantity-value'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (max !== '') {
+				if (oldValue >= max) {
+					var newVal = oldValue;
+				} else {
+					var newVal = oldValue + 1;
+				}
+			} else {
+				var newVal = oldValue + 1;
+			}
+			qtyContainer.text(newVal);
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (min !== '') {
+				if (oldValue <= min) {
+					var newVal = oldValue;
+				} else {
+					var newVal = oldValue - 1;
+				}
+			} else {
+				var newVal = oldValue - 1;
+			}
+			qtyContainer.text(newVal);
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+	});
+
+	let cartRows = '.offcanvas-collapse .woocommerce table.shop_table tbody tr.cart_item';
+	let cartSubTotal = 0.00;
+	$(cartRows).each(function() {
+		let tr = $(this);
+		let amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
+		amount = parseFloat(amount);
+		cartSubTotal += amount;
+	});
+	$(`.offcanvas-collapse .woocommerce`).append(`<div class="row"><div class="col-md-12"><h2>Subtotal: <span class="float-right">$<span class="currency-symbol">${cartSubTotal}</span></span></h2></div></div>`);
 });

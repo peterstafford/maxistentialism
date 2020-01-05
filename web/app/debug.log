@@ -970,3 +970,63 @@ Stack trace:
 [29-Dec-2019 11:51:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\class-wp-hook.php on line 286
 [29-Dec-2019 11:51:45 UTC] PHP Notice:  Undefined index: wc_stripe in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\resources\functions.php on line 125
 [29-Dec-2019 11:51:45 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\class-wp-hook.php on line 286
+[04-Jan-2020 12:33:40 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\update.php on line 384
+[04-Jan-2020 16:33:31 UTC] PHP Notice:  Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\functions.php on line 4592
+[04-Jan-2020 16:33:32 UTC] PHP Notice:  Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\functions.php on line 4592
+[04-Jan-2020 16:33:32 UTC] PHP Notice:  Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\functions.php on line 4592
+[05-Jan-2020 19:14:30 UTC] PHP Fatal error:  Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php:140
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php(309): WC_Stripe_API::request(Array, 'customers/cus_G...', 'GET')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(103): WC_Stripe_Customer->get_sources()
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\class-wp-hook.php(286): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#3 C:\xampp\htdocs\maxistentialism-2 in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php on line 140
+[05-Jan-2020 19:15:23 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Cannot use object of type WP_Error as array in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php:150
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php(309): WC_Stripe_API::request(Array, 'customers/cus_G...', 'GET')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(103): WC_Stripe_Customer->get_sources()
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\class-wp-hook.php(286): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#3 C:\xampp\htdocs\maxistentialism-2019-develop\web\wp\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#4 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce\includes\class-wc-payment-tokens in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php on line 150
+[05-Jan-2020 19:16:19 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:22:38 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:23:32 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:26:21 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:29:44 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:30:39 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:32:52 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:34:03 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:36:17 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:36:46 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:47:15 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:47:29 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:49:47 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:51:20 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:52:00 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:53:23 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:54:53 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 19:56:42 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:01:20 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:01:22 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:02:50 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:04:43 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:06:32 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:10:48 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:12:33 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:18:26 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316
+[05-Jan-2020 20:22:56 UTC] PHP Notice:  Trying to get property 'data' of non-object in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php on line 316

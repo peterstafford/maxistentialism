@@ -68,7 +68,7 @@ class FrontPage extends Controller {
 		$cart_count = WC()->cart->get_cart_contents_count();
 
 		return '<div class="logo-with-title position-absolute h-100 z-10 logo-cart'.($cart_count > 0 ? '' : ' d-none').'" data-cart_count="'.$cart_count.'">
-			<div class="img-container d-none d-lg-inline-block text-white px-2 text-uppercase text-center">
+			<div class="img-container d-none d-lg-inline-block text-white p-2 text-uppercase text-center">
 				<div class="logo-items">
 					<img src="'.\App\asset_path('images/bullet 3@1x.png').'" class="d-inline-block bullet-3 w-25">
 					<img src="'.\App\asset_path('images/bullet 4@1x.png').'" class="d-inline-block bullet-4 w-25">
@@ -87,7 +87,7 @@ class FrontPage extends Controller {
 		$cart_count = WC()->cart->get_cart_contents_count();
 
 		return '<div class="logo-with-title h-100 z-10 logo-cart'.($cart_count > 0 ? '' : ' d-none').'" data-cart_count="'.$cart_count.'">
-			<div class="img-container d-inline-block text-white px-2 text-uppercase text-center">
+			<div class="img-container d-inline-block text-white p-2 text-uppercase text-center">
 				<div class="logo-items">
 					<img src="'.\App\asset_path('images/bullet 3@1x.png').'" class="d-inline-block bullet-3 w-25">
 					<img src="'.\App\asset_path('images/bullet 4@1x.png').'" class="d-inline-block bullet-4 w-25">

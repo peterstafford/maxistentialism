@@ -13,13 +13,15 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
 	wp_enqueue_style('bs4-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', false, null);
 	wp_enqueue_style('styles/main.css', asset_path('styles/main.css'), false, null);
+	wp_enqueue_style('styles/temp.css', asset_path('styles/temp.css'), false, null);
 	wp_enqueue_script('bs4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js', [ 'jquery' ], null, true);
-	wp_register_script('/js/manifest.js', asset_path('/js/manifest.js'), [], null, true);
-	wp_register_script('/js/vendor.js', asset_path('/js/vendor.js'), ['/js/manifest.js'], null, true);
+	wp_register_script('/js/manifest.js', asset_path('js/manifest.js'), [], null, true);
+	wp_register_script('/js/vendor.js', asset_path('js/vendor.js'), ['/js/manifest.js'], null, true);
 	wp_enqueue_script('jquery-form');
-	wp_enqueue_script('wc-checkout');
+	// wp_enqueue_script('wc-checkout');
+	wp_dequeue_script( 'wc-checkout' );
 
-	wp_enqueue_script( '/js/main.js', asset_path('/js/main.js'), ['/js/manifest.js', '/js/vendor.js'], null, true );
+	wp_enqueue_script( '/js/main.js', asset_path('js/main.js'), ['/js/manifest.js', '/js/vendor.js'], null, true );
 	wp_localize_script( '/js/main.js', 'site_url', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
 
 	if (is_single() && comments_open() && get_option('thread_comments')) {

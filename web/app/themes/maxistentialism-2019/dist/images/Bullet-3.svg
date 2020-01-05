@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Bullet 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-189.000000, -2990.000000)" fill="#FEDA01">
+            <g id="FAQ" transform="translate(-258.000000, 1707.000000)">
+                <path d="M455.3405,1283.197 C455.2695,1283.075 455.1395,1283 455.0005,1283 C454.8595,1283 454.7305,1283.075 454.6605,1283.197 L447.0525,1296.41 C446.9825,1296.532 446.9825,1296.681 447.0525,1296.803 C447.1225,1296.925 447.2525,1297 447.3915,1297 L462.6075,1297 C462.7485,1297 462.8775,1296.925 462.9475,1296.803 C463.0175,1296.681 463.0175,1296.532 462.9475,1296.41 L455.3405,1283.197 Z" id="Bullet-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

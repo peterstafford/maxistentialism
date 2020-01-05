@@ -154,6 +154,12 @@ a:hover {
 	z-index: 11;
 	font-size: medium;
 
+	.logo-with-title {
+		position: absolute;
+		left: 0;
+		height: auto !important;
+	}
+
 	&.open {
 		visibility: visible;
 		transform: translateX(0%);
@@ -300,6 +306,9 @@ a:hover {
 /* For mobile and tablet */
 @media (max-width: 991px) {
 	.offcanvas-collapse {
+		& > .logo-with-title {
+			display: none;
+		}
 		.choice {
 			&.open {
 			    height: calc(100% - 168px);
@@ -427,10 +436,12 @@ a:hover {
 		.checkout-text {
 		    font-size: 16px;
 		    position: absolute;
+		    display: none;
 		}
 		&:hover {
 			.checkout-text {
 				position: relative;
+				display: block;
 			}
 		}
 	}
@@ -463,6 +474,10 @@ a:hover {
 		img {
 			width: 20% !important;
 		}
+		.img-container {
+			padding-top: 5px !important;
+    		padding-bottom: 5px !important;
+		}
 	}
 }
 
@@ -480,4 +495,77 @@ a:hover {
     width: 100%;
     border-color: #000;
     color: #000 !important;
+}
+
+/* sidenav cart */
+.offcanvas-collapse .woocommerce table.shop_table, 
+.offcanvas-collapse .woocommerce table.shop_table td, 
+.offcanvas-collapse .woocommerce table.shop_table th {
+	border: none;
+	font-weight: bold;
+
+}
+
+.offcanvas-collapse .woocommerce table.shop_table .product-name a {
+    pointer-events: none;
+}
+.offcanvas-collapse .woocommerce table.shop_table thead, 
+.offcanvas-collapse .woocommerce table.shop_table .product-remove, 
+.offcanvas-collapse .woocommerce table.shop_table .product-thumbnail a,
+.offcanvas-collapse .woocommerce table.shop_table .product-price,
+.offcanvas-collapse .woocommerce table.shop_table tr:not(.cart_item) {
+	display: none;
+}
+.offcanvas-collapse .woocommerce table.shop_table .product-thumbnail {
+	position: relative;
+}
+.offcanvas-collapse .woocommerce table.shop_table .product-thumbnail:before {
+	content: '';
+	position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    padding: 1em;
+    transform: translateY(-50%);
+}
+
+.offcanvas-collapse .woocommerce table.shop_table .product-quantity .quantity .quantity-button {
+	cursor: pointer;
+	user-select: none;
+}
+.offcanvas-collapse .woocommerce table.shop_table .product-quantity input[type="number"] {
+	display: none;
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-7) .product-thumbnail:before {
+	background-image: url('../images/Bullet-1.svg');
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-6) .product-thumbnail:before {
+	background-image: url('../images/Bullet-2.svg');
+
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-5) .product-thumbnail:before {
+	background-image: url('../images/Bullet-3.svg');
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-4) .product-thumbnail:before {
+	background-image: url('../images/Bullet-4.svg');
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-3) .product-thumbnail:before {
+	background-image: url('../images/Bullet-5.svg');
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-2) .product-thumbnail:before {
+	background-image: url('../images/Bullet-6.svg');
+}
+
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n-1) .product-thumbnail:before {
+	background-image: url('../images/Bullet-7.svg');
+}
+.offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n) .product-thumbnail:before {
+	background-image: url('../images/Bullet-8.svg');
 }
