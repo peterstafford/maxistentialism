@@ -616,7 +616,6 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 				$this->lock_order_payment( $order, $intent );
 				$intent = $this->confirm_intent( $intent, $order, $prepared_source );
 			}
-
 			if ( ! empty( $intent->error ) ) {
 				$this->maybe_remove_non_existent_customer( $intent->error, $order );
 
@@ -632,6 +631,7 @@ class WC_Gateway_Stripe extends WC_Stripe_Payment_Gateway {
 			if ( ! empty( $intent ) ) {
 				// Use the last charge within the intent to proceed.
 				$response = end( $intent->charges->data );
+
 
 				// If the intent requires a 3DS flow, redirect to it.
 				if ( 'requires_action' === $intent->status ) {

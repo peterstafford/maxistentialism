@@ -175,7 +175,7 @@ $(function() {
 		$('header.bg-black-400 .fixed-top').addClass('d-none');
 	});
 
-	$('.offcanvas-collapse .sidenav-title .close, .close-offcanvas').on('click', function(e) {
+	$(document).on('click', '.offcanvas-collapse .sidenav-title .close, .close-offcanvas', function(e) {
 		$(this).closest('.offcanvas-collapse').removeClass('open');
 		$('header.bg-black-400 .fixed-top').removeClass('d-none');
 	});
@@ -229,13 +229,31 @@ $(function() {
 	$( document.body ).trigger('updated_checkout');
 	let submitBtn = $(checkoutForm).find('#place_order');
 	let submitBtnHtml = submitBtn.html();
+	let submitOrderContainer = $('.choice.submit-order');
 	checkoutForm.ajaxForm({
 		beforeSubmit: function(formData, $form, options) {
 			submitBtn.prop('disabled', true).html('Please Wait...');
 		},
 		success: function(response, textStatus, jqXHR, $form) {
 			$(checkoutForm).find('#place_order').prop('disabled', false).html(submitBtnHtml);
-			$(checkoutForm).find('#result').html(response.messages);
+
+			let backBtn = `<button class="btn rounded-0 bg-light text-dark btn-block py-3 my-auto font-weight-bold close-offcanvas" style="font-size: inherit;" onclick="location.reload();">BACK TO SHOP</button>`;
+			submitOrderContainer.find('.card-body').addClass('d-flex h-100 flex-column').append(backBtn);
+			let email = submitOrderContainer.data('email');
+
+			if (response.result == 'success') {
+				let responseMsg = `<div class="text-center">
+					<h2>Order Confirmed!</h2>
+					<h6 style="font-size: 18px;margin-bottom: .5em;" class="font-weight-bold">Your stuff is on it's way.</h6>
+					<p>An order confirmation email has been</p>
+					<p>sent to {{email}}</p>
+				</div>`;
+				responseMsg = responseMsg.replace('{{email}}', email);
+				submitOrderContainer.find('.container-fluid').removeClass('lg:mt-16').addClass('mt-auto').html(responseMsg);
+				checkoutForm.resetForm();
+			} else {
+				$(checkoutForm).find('#result').html(response.messages);
+			}
 		}
 	});
 

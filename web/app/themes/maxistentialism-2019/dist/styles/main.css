@@ -6116,7 +6116,11 @@ a:hover {
 }
 
 .offcanvas-collapse .choice.submit-order .woocommerce-checkout-review-order-table th {
-  padding-right: 5%;
+  width: 50%;
+}
+
+.offcanvas-collapse .choice.submit-order .woocommerce-checkout-review-order-table ul li {
+  padding-left: 0 !important;
 }
 
 .offcanvas-collapse .choice .card-header {

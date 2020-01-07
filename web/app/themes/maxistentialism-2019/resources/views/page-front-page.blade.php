@@ -194,7 +194,7 @@ use App\Controllers\FrontPage;
 									</div>
 								</div>
 							</div>
-							<div class="choice border-4 collapsed submit-order">
+							<div class="choice border-4 collapsed submit-order" data-email="{{ wp_get_current_user()->user_email }}">
 								<div class="card-header p-lg-0"><div class="title text-uppercase text-white">Submit Order</div></div>
 								<div class="card-body position-relative">
 									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close text-light">&times;</span></div>
@@ -207,6 +207,7 @@ use App\Controllers\FrontPage;
 												<div id="result"></div>
 												{{do_action( 'woocommerce_checkout_order_review' )}}
 												<input type="hidden" name="payment_method" value="stripe">
+												<input type="hidden" name="wc-stripe-payment-token" value="1">
 											</div>
 											{{-- <input type="hidden" name="payment_method" value="">
 											<input type="hidden" name="woocommerce-process-checkout-nonce" value="{{wp_create_nonce( 'wc_checkout_form' )}}"> --}}

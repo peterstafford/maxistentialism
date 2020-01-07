@@ -229,7 +229,12 @@ a:hover {
 				    font-size: 2em;
 				}
 				th {
-				    padding-right: 5%;
+				    width: 50%;
+				}
+				ul {
+					li {
+						padding-left: 0 !important;
+					}
 				}
 			}
 		}

@@ -729,7 +729,7 @@ $(function () {
     $('.sidenav-text').text(linkName);
     $('header.bg-black-400 .fixed-top').addClass('d-none');
   });
-  $('.offcanvas-collapse .sidenav-title .close, .close-offcanvas').on('click', function (e) {
+  $(document).on('click', '.offcanvas-collapse .sidenav-title .close, .close-offcanvas', function (e) {
     $(this).closest('.offcanvas-collapse').removeClass('open');
     $('header.bg-black-400 .fixed-top').removeClass('d-none');
   });
@@ -774,13 +774,25 @@ $(function () {
   $(document.body).trigger('updated_checkout');
   var submitBtn = $(checkoutForm).find('#place_order');
   var submitBtnHtml = submitBtn.html();
+  var submitOrderContainer = $('.choice.submit-order');
   checkoutForm.ajaxForm({
     beforeSubmit: function beforeSubmit(formData, $form, options) {
       submitBtn.prop('disabled', true).html('Please Wait...');
     },
     success: function success(response, textStatus, jqXHR, $form) {
       $(checkoutForm).find('#place_order').prop('disabled', false).html(submitBtnHtml);
-      $(checkoutForm).find('#result').html(response.messages);
+      var backBtn = "<button class=\"btn rounded-0 bg-light text-dark btn-block py-3 my-auto font-weight-bold close-offcanvas\" style=\"font-size: inherit;\" onclick=\"location.reload();\">BACK TO SHOP</button>";
+      submitOrderContainer.find('.card-body').addClass('d-flex h-100 flex-column').append(backBtn);
+      var email = submitOrderContainer.data('email');
+
+      if (response.result == 'success') {
+        var responseMsg = "<div class=\"text-center\">\n\t\t\t\t\t<h2>Order Confirmed!</h2>\n\t\t\t\t\t<h6 style=\"font-size: 18px;margin-bottom: .5em;\" class=\"font-weight-bold\">Your stuff is on it's way.</h6>\n\t\t\t\t\t<p>An order confirmation email has been</p>\n\t\t\t\t\t<p>sent to {{email}}</p>\n\t\t\t\t</div>";
+        responseMsg = responseMsg.replace('{{email}}', email);
+        submitOrderContainer.find('.container-fluid').removeClass('lg:mt-16').addClass('mt-auto').html(responseMsg);
+        checkoutForm.resetForm();
+      } else {
+        $(checkoutForm).find('#result').html(response.messages);
+      }
     }
   });
   var quantityArrows = "<div class=\"quantity-nav row\">\n\t\t<div class=\"quantity-button quantity-up col-1\">+</div>\n\t\t<div class=\"quantity-value col-1\">1</div>\n\t\t<div class=\"quantity-button quantity-down col-1\">-</div>\n\t</div>";
