@@ -1,0 +1,32 @@
+2019-12-16T09:29:02+00:00 CRITICAL Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined function App\Controllers\asset_path() in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php:67
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\uploads\cache\07c2c7d29457c404efbd2273067a55d96ffb2103.php(146): App\Controllers\FrontPage::sectionLogoWtihCart('shop')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\PhpEngine.php(43): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdoc in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php on line 67
+
+2019-12-16T09:30:25+00:00 CRITICAL Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined function App\Controllers\App\asset_path() in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php:67
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\uploads\cache\07c2c7d29457c404efbd2273067a55d96ffb2103.php(146): App\Controllers\FrontPage::sectionLogoWtihCart('shop')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\PhpEngine.php(43): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\h in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php on line 67
+
+2019-12-16T09:31:40+00:00 CRITICAL Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined function App\Controllers\App\asset_path() in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php:67
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\uploads\cache\07c2c7d29457c404efbd2273067a55d96ffb2103.php(146): App\Controllers\FrontPage::sectionLogoWtihCart('shop')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\PhpEngine.php(43): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\h in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php on line 67
+
+2019-12-16T09:32:22+00:00 CRITICAL Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined function App\Controllers\App\asset_path() in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php:66
+Stack trace:
+#0 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\uploads\cache\07c2c7d29457c404efbd2273067a55d96ffb2103.php(146): App\Controllers\FrontPage::sectionLogoWtihCart('shop')
+#1 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\PhpEngine.php(43): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\vendor\illuminate\view\View.php(142): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\h in C:\xampp\htdocs\maxistentialism-2019-develop\web\app\themes\maxistentialism-2019\app\Controllers\FrontPage.php on line 66
+

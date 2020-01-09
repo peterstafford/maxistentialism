@@ -1,0 +1,1047 @@
+2019-12-25T11:08:18+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Domain association file updated.
+====End Log====
+
+
+2019-12-25T11:08:18+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: Unable to verify domain - missing secret key.
+====End Log====
+
+
+2019-12-25T11:19:24+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2019-12-25T11:31:14+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2019-12-25T11:36:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2019-12-25T12:37:11+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Sybil Alvarado, Username: Sybil
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2019-12-25T12:37:12+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2019-12-25T12:59:07+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T12:59:18+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Operation timed out after 10000 milliseconds with 0 out of 0 bytes received
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T12:59:31+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T12:59:36+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T12:59:44+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T12:59:45+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:22:54+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:22:55+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:23:05+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:23:06+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:29:42+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+sources/src_1FtbnpG6VLS1ev4Aibg61pLb
+====End Log====
+
+
+2019-12-25T15:29:44+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Sybil Alvarado, Username: Sybil
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2019-12-25T15:29:46+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Info: Begin processing payment for order 59 for the amount of 9.00
+====End Log====
+
+
+2019-12-25T15:29:46+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1FtbnpG6VLS1ev4Aibg61pLb
+    [amount] => 900
+    [currency] => usd
+    [description] => Maxistentialism - Order 59
+    [metadata] => Array
+        (
+            [customer_name] => Sybil Alvarado
+            [customer_email] => lofutyze@mailinator.com
+            [order_id] => 59
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_GQPwar75uKSJUP
+)
+
+====End Log====
+
+
+2019-12-25T15:29:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1FtbnzG6VLS1ev4AMBsBEyhY initiated for order 59
+====End Log====
+
+
+2019-12-25T15:29:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents/pi_1FtbnzG6VLS1ev4AMBsBEyhY/confirm request: Array
+(
+    [source] => src_1FtbnpG6VLS1ev4Aibg61pLb
+)
+
+====End Log====
+
+
+2019-12-25T15:29:49+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1FtbnzG6VLS1ev4AMBsBEyhY succeeded for order 59
+====End Log====
+
+
+2019-12-25T15:29:49+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Ftbo1G6VLS1ev4AsdS7Hgez
+    [object] => charge
+    [amount] => 900
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Ftbo1G6VLS1ev4AGPOI2Uly
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Rerum ipsa itaque c
+                    [country] => LT
+                    [line1] => 891 West First Road
+                    [line2] => Et illum distinctio
+                    [postal_code] => QUIAAUTEMPERSPICIA
+                    [state] => Magni natus optio p
+                )
+
+            [email] => lofutyze@mailinator.com
+            [name] => Sybil Alvarado
+            [phone] => +1 (108) 449-4065
+        )
+
+    [captured] => 1
+    [created] => 1577287789
+    [currency] => usd
+    [customer] => cus_GQPwar75uKSJUP
+    [description] => Maxistentialism - Order 59
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Sybil Alvarado
+            [customer_email] => lofutyze@mailinator.com
+            [order_id] => 59
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 50
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1FtbnzG6VLS1ev4AMBsBEyhY
+    [payment_method] => src_1FtbnpG6VLS1ev4Aibg61pLb
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => pass
+                            [address_postal_code_check] => pass
+                            [cvc_check] => pass
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2022
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1FtXcCG6VLS1ev4A/ch_1Ftbo1G6VLS1ev4AsdS7Hgez/rcpt_GQSjsBat9BxkIbfhtGk72nBC8QDEbw1
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Ftbo1G6VLS1ev4AsdS7Hgez/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1FtbnpG6VLS1ev4Aibg61pLb
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2022
+                    [last4] => 4242
+                    [country] => US
+                    [brand] => Visa
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [cvc_check] => pass
+                    [funding] => credit
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [three_d_secure] => optional
+                    [name] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_GQSjguoZTX7opvobPrkVldYa
+            [created] => 1577287789
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => Rerum ipsa itaque c
+                            [country] => LT
+                            [line1] => 891 West First Road
+                            [line2] => Et illum distinctio
+                            [postal_code] => QUIAAUTEMPERSPICIA
+                            [state] => Magni natus optio p
+                        )
+
+                    [email] => lofutyze@mailinator.com
+                    [name] => Sybil Alvarado
+                    [phone] => +1 (108) 449-4065
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2019-12-25T15:29:49+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+balance/history/txn_1Ftbo1G6VLS1ev4AGPOI2Uly
+====End Log====
+
+
+2019-12-25T15:39:56+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:39:58+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:40:35+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:40:39+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:43:57+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T15:43:59+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T16:03:34+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T16:03:35+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:38:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:38:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:38:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:39:00+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:39:00+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:40:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:40:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:45:14+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:45:14+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:45:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:45:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:46:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:46:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error Response: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: api.stripe.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+
+Failed request: Array
+(
+    [api] => customers/cus_GQPwar75uKSJUP/sources
+    [request] => Array
+        (
+            [limit] => 100
+        )
+
+    [idempotency_key] => 
+)
+
+====End Log====
+
+
+2019-12-25T20:49:04+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:49:06+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:49:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:49:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:51:08+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:51:10+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:51:18+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:51:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:54:23+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:54:24+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:54:34+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T20:54:36+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T21:02:59+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T21:03:00+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T21:03:09+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2019-12-25T21:03:10+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+

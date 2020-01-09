@@ -2,8 +2,9 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
-web/app/upgrade
-web/app/uploads/*
+!web/app/upgrade
+!web/app/uploads/*
+web/app/uploads/GeoLite2-Country.mmdb
 !web/app/uploads/.gitkeep
 web/app/debug.log
 # plugins
@@ -15,7 +16,7 @@ web/wp
 web/.htaccess
 
 # Dotenv
-.env
+!.env
 .env.*
 !.env.example
 

@@ -1,0 +1,1112 @@
+2020-01-06T05:37:25+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T05:38:56+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T05:40:31+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Karleigh Aguirre, Username: Karleigh
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T05:40:32+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T06:16:26+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Karleigh Aguirre, Username: Karleigh
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T06:16:27+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T06:17:30+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Karleigh Aguirre, Username: Karleigh
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T06:17:31+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T07:19:14+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T07:20:45+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T07:20:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T07:35:21+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T07:35:22+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T07:37:33+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T07:37:35+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T08:14:38+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T08:14:40+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T08:15:26+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T08:15:27+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T08:22:22+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T08:25:44+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T09:20:08+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:24:41+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T19:27:08+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:29:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:34:53+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:35:45+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:35:46+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:35:50+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T19:36:10+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Gemma Albert, Username: Gemma
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:36:11+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+sources/src_1Fv2LQG6VLS1ev4A2Z5jzegw
+====End Log====
+
+
+2020-01-06T19:36:12+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Info: Begin processing payment for order 68 for the amount of 27.00
+====End Log====
+
+
+2020-01-06T19:36:12+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+    [amount] => 2700
+    [currency] => usd
+    [description] => Maxistentialism - Order 68
+    [metadata] => Array
+        (
+            [customer_name] => Gemma Albert
+            [customer_email] => movycodo@mailinator.net
+            [order_id] => 68
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_GQPwar75uKSJUP
+)
+
+====End Log====
+
+
+2020-01-06T19:36:13+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1Fy1N4G6VLS1ev4Ay1hwwnZE initiated for order 68
+====End Log====
+
+
+2020-01-06T19:36:13+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents/pi_1Fy1N4G6VLS1ev4Ay1hwwnZE/confirm request: Array
+(
+    [source] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+)
+
+====End Log====
+
+
+2020-01-06T19:36:15+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1Fy1N4G6VLS1ev4Ay1hwwnZE succeeded for order 68
+====End Log====
+
+
+2020-01-06T19:36:15+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Fy1N6G6VLS1ev4AloeqbpMe
+    [object] => charge
+    [amount] => 2700
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Fy1N6G6VLS1ev4AiP8dWzvn
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => lofutyze@mailinator.com
+            [name] =>  
+            [phone] => 
+        )
+
+    [captured] => 1
+    [created] => 1578339376
+    [currency] => usd
+    [customer] => cus_GQPwar75uKSJUP
+    [description] => Maxistentialism - Order 68
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Gemma Albert
+            [customer_email] => movycodo@mailinator.net
+            [order_id] => 68
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 56
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1Fy1N4G6VLS1ev4Ay1hwwnZE
+    [payment_method] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => 
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2020
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1FtXcCG6VLS1ev4A/ch_1Fy1N6G6VLS1ev4AloeqbpMe/rcpt_GV1Pd6NZyAUzRMusvKqGwbZ4mN4drON
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Fy1N6G6VLS1ev4AloeqbpMe/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2020
+                    [last4] => 4242
+                    [country] => US
+                    [brand] => Visa
+                    [funding] => credit
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [three_d_secure] => optional
+                    [name] => 
+                    [address_line1_check] => 
+                    [address_zip_check] => 
+                    [cvc_check] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_GRwDX9lgH9W2KquzIutLf8GK
+            [created] => 1578339376
+            [currency] => 
+            [customer] => cus_GQPwar75uKSJUP
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => 
+                    [email] => lofutyze@mailinator.com
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => chargeable
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:36:15+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+balance/history/txn_1Fy1N6G6VLS1ev4AiP8dWzvn
+====End Log====
+
+
+2020-01-06T19:38:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2020-01-06T19:40:12+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:40:15+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:45:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:45:21+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:51:31+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:51:33+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:52:47+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:52:49+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T19:54:51+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T19:54:53+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_GQPwar75uKSJUP
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-01-06T20:00:16+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+customers/cus_GQPwar75uKSJUP request: Array
+(
+    [email] => technology@brightbrightgreat.com
+    [description] => Name: Lani Mcconnell, Username: Lani
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-01-06T20:00:18+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+sources/src_1Fv2LQG6VLS1ev4A2Z5jzegw
+====End Log====
+
+
+2020-01-06T20:00:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Info: Begin processing payment for order 69 for the amount of 9.00
+====End Log====
+
+
+2020-01-06T20:00:19+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+    [amount] => 900
+    [currency] => usd
+    [description] => Maxistentialism - Order 69
+    [metadata] => Array
+        (
+            [customer_name] => Lani Mcconnell
+            [customer_email] => covyrem@mailinator.net
+            [order_id] => 69
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_GQPwar75uKSJUP
+)
+
+====End Log====
+
+
+2020-01-06T20:00:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1Fy1kPG6VLS1ev4A2KChwcqH initiated for order 69
+====End Log====
+
+
+2020-01-06T20:00:20+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+payment_intents/pi_1Fy1kPG6VLS1ev4A2KChwcqH/confirm request: Array
+(
+    [source] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+)
+
+====End Log====
+
+
+2020-01-06T20:00:22+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Stripe PaymentIntent pi_1Fy1kPG6VLS1ev4A2KChwcqH succeeded for order 69
+====End Log====
+
+
+2020-01-06T20:00:22+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Fy1kRG6VLS1ev4ARr7FAziP
+    [object] => charge
+    [amount] => 900
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Fy1kRG6VLS1ev4AiARVcNtz
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => lofutyze@mailinator.com
+            [name] =>  
+            [phone] => 
+        )
+
+    [captured] => 1
+    [created] => 1578340823
+    [currency] => usd
+    [customer] => cus_GQPwar75uKSJUP
+    [description] => Maxistentialism - Order 69
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Lani Mcconnell
+            [customer_email] => covyrem@mailinator.net
+            [order_id] => 69
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 49
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1Fy1kPG6VLS1ev4A2KChwcqH
+    [payment_method] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => 
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2020
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1FtXcCG6VLS1ev4A/ch_1Fy1kRG6VLS1ev4ARr7FAziP/rcpt_GV1o4YxQj0PRmeDxvxbqn0WE8HVKuvB
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Fy1kRG6VLS1ev4ARr7FAziP/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1Fv2LQG6VLS1ev4A2Z5jzegw
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2020
+                    [last4] => 4242
+                    [country] => US
+                    [brand] => Visa
+                    [funding] => credit
+                    [fingerprint] => vDCWNzcoMVuDvGcv
+                    [three_d_secure] => optional
+                    [name] => 
+                    [address_line1_check] => 
+                    [address_zip_check] => 
+                    [cvc_check] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_GRwDX9lgH9W2KquzIutLf8GK
+            [created] => 1578340823
+            [currency] => 
+            [customer] => cus_GQPwar75uKSJUP
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => 
+                    [email] => lofutyze@mailinator.com
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => chargeable
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2020-01-06T20:00:22+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+balance/history/txn_1Fy1kRG6VLS1ev4AiARVcNtz
+====End Log====
+
+
