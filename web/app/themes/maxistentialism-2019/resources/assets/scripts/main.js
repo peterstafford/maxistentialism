@@ -165,7 +165,23 @@ async function validateTabStrip(stripeTab) {
 		}
 	});
 	// let filled = tab.find('.wc-stripe-elements-field.StripeElement--complete');
+}
 
+function update_cart(cartRows) {
+	let formData = {};
+	let inputs = $(cartRows).find('.qty.text');
+	inputs.each(function() {
+		let input = $(this);
+		formData[input.attr('name')] = input.val();
+	});
+
+	formData[$('#woocommerce-cart-nonce').attr('name')] = $('#woocommerce-cart-nonce').val();
+	formData[$('[name="update_cart"]').attr('name')] = $('[name="update_cart"]').attr('value');
+
+	console.log(formData);
+	$.post(site_url.ajaxurl, formData).done(function(res) {
+		console.log(res);
+	});
 }
 $(function() {
 	$('.open-link').on('click', function() {
@@ -273,6 +289,7 @@ $(function() {
 		qtyContainer = spinner.find('.quantity-value'),
 		min = input.attr('min'),
 		max = input.attr('max');
+		qtyContainer.text(input.val());
 
 		btnUp.click(function() {
 			var oldValue = parseFloat(input.val());
@@ -313,7 +330,29 @@ $(function() {
 		let tr = $(this);
 		let amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
 		amount = parseFloat(amount);
+		let input = tr.find('.qty.text');
+		input.attr('data-price', amount / parseInt(input.val()));
+
 		cartSubTotal += amount;
 	});
-	$(`.offcanvas-collapse .woocommerce`).append(`<div class="row"><div class="col-md-12"><h2>Subtotal: <span class="float-right">$<span class="currency-symbol">${cartSubTotal}</span></span></h2></div></div>`);
+
+	$(cartRows).find('.qty.text').on('change input', function(e) {		
+		update_cart(cartRows);
+
+		let cartSubTotal = 0;
+		let inputVal = $(e.target).val();
+		let inputPrice = $(e.target).data('price');
+		let subTotal = parseInt(inputVal) * parseInt(inputPrice);
+		$(e.target).closest('tr').find('.product-subtotal .amount').html('<span class="woocommerce-Price-currencySymbol">$</span>'+subTotal);
+
+		$(cartRows).each(function() {
+			let tr = $(this);
+			let amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
+			amount = parseFloat(amount);
+			cartSubTotal += amount;
+		});
+		$('.sub-totals').find('.price-subtotals').text(cartSubTotal);
+	});
+
+	$(`.offcanvas-collapse .woocommerce`).append(`<div class="row"><div class="col-md-12 sub-totals"><h2>Subtotal: <span class="float-right"><span class="currency-symbol">$</span><span class="price-subtotals">${cartSubTotal}</span></span></h2></div></div>`);
 });
