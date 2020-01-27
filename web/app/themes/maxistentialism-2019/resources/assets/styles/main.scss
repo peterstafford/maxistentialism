@@ -260,6 +260,7 @@ a:hover {
 			height: auto;
 			color: #000 !important;
     		font-weight: bold;
+    		-webkit-appearance: none;
 		}
 	}
 	
@@ -588,4 +589,8 @@ a:hover {
     background-color: rgba(255,255,255, 0.5);
     top: 0;
     left: 0;
+}
+
+.return-to-shop {
+	display: none;
 }
