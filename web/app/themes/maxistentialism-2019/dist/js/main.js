@@ -187,23 +187,23 @@ render._withStripped = true
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./Article ico@2x.svg": "./resources/assets/images/Article ico@2x.svg",
-	"./Bullet-1.svg": "./resources/assets/images/Bullet-1.svg",
-	"./Bullet-2.svg": "./resources/assets/images/Bullet-2.svg",
-	"./Bullet-3.svg": "./resources/assets/images/Bullet-3.svg",
-	"./Bullet-4.svg": "./resources/assets/images/Bullet-4.svg",
-	"./Bullet-5.svg": "./resources/assets/images/Bullet-5.svg",
-	"./Bullet-6.svg": "./resources/assets/images/Bullet-6.svg",
-	"./Bullet-7.svg": "./resources/assets/images/Bullet-7.svg",
-	"./Bullet-8.svg": "./resources/assets/images/Bullet-8.svg",
-	"./FAQ ico@2x.svg": "./resources/assets/images/FAQ ico@2x.svg",
-	"./Podcast ico@2x.svg": "./resources/assets/images/Podcast ico@2x.svg",
-	"./Video ico@2x.svg": "./resources/assets/images/Video ico@2x.svg",
+	"./article ico@2x.svg": "./resources/assets/images/article ico@2x.svg",
+	"./bullet-1.svg": "./resources/assets/images/bullet-1.svg",
+	"./bullet-2.svg": "./resources/assets/images/bullet-2.svg",
+	"./bullet-3.svg": "./resources/assets/images/bullet-3.svg",
+	"./bullet-4.svg": "./resources/assets/images/bullet-4.svg",
+	"./bullet-5.svg": "./resources/assets/images/bullet-5.svg",
+	"./bullet-6.svg": "./resources/assets/images/bullet-6.svg",
+	"./bullet-7.svg": "./resources/assets/images/bullet-7.svg",
+	"./bullet-8.svg": "./resources/assets/images/bullet-8.svg",
+	"./faq ico@2x.svg": "./resources/assets/images/faq ico@2x.svg",
 	"./footer-logo.svg": "./resources/assets/images/footer-logo.svg",
 	"./header-logo-2.svg": "./resources/assets/images/header-logo-2.svg",
 	"./header-logo.svg": "./resources/assets/images/header-logo.svg",
 	"./message-sent.svg": "./resources/assets/images/message-sent.svg",
-	"./right-bracket.svg": "./resources/assets/images/right-bracket.svg"
+	"./podcast ico@2x.svg": "./resources/assets/images/podcast ico@2x.svg",
+	"./right-bracket.svg": "./resources/assets/images/right-bracket.svg",
+	"./video ico@2x.svg": "./resources/assets/images/video ico@2x.svg"
 };
 
 
@@ -228,9 +228,9 @@ webpackContext.id = "./resources/assets/images sync recursive ^\\.\\/.*\\.svg$";
 
 /***/ }),
 
-/***/ "./resources/assets/images/Article ico@2x.svg":
+/***/ "./resources/assets/images/article ico@2x.svg":
 /*!****************************************************!*\
-  !*** ./resources/assets/images/Article ico@2x.svg ***!
+  !*** ./resources/assets/images/article ico@2x.svg ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -239,9 +239,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=98px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-1.svg":
+/***/ "./resources/assets/images/bullet-1.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-1.svg ***!
+  !*** ./resources/assets/images/bullet-1.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -250,9 +250,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=12px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-2.svg":
+/***/ "./resources/assets/images/bullet-2.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-2.svg ***!
+  !*** ./resources/assets/images/bullet-2.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -261,9 +261,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=15px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-3.svg":
+/***/ "./resources/assets/images/bullet-3.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-3.svg ***!
+  !*** ./resources/assets/images/bullet-3.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -272,9 +272,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=16px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-4.svg":
+/***/ "./resources/assets/images/bullet-4.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-4.svg ***!
+  !*** ./resources/assets/images/bullet-4.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -283,9 +283,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=17px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-5.svg":
+/***/ "./resources/assets/images/bullet-5.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-5.svg ***!
+  !*** ./resources/assets/images/bullet-5.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -294,9 +294,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=19px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-6.svg":
+/***/ "./resources/assets/images/bullet-6.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-6.svg ***!
+  !*** ./resources/assets/images/bullet-6.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -305,9 +305,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=12px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-7.svg":
+/***/ "./resources/assets/images/bullet-7.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-7.svg ***!
+  !*** ./resources/assets/images/bullet-7.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -316,9 +316,9 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=17px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/Bullet-8.svg":
+/***/ "./resources/assets/images/bullet-8.svg":
 /*!**********************************************!*\
-  !*** ./resources/assets/images/Bullet-8.svg ***!
+  !*** ./resources/assets/images/bullet-8.svg ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -327,36 +327,14 @@ module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=14px hei
 
 /***/ }),
 
-/***/ "./resources/assets/images/FAQ ico@2x.svg":
+/***/ "./resources/assets/images/faq ico@2x.svg":
 /*!************************************************!*\
-  !*** ./resources/assets/images/FAQ ico@2x.svg ***!
+  !*** ./resources/assets/images/faq ico@2x.svg ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=86px height=86px viewBox=\"0 0 86 86\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>FAQ ico@2x</title> <desc>Created with Sketch.</desc> <defs> <polygon id=path-1 points=\"0 0.000119444444 85.9999602 0.000119444444 85.9999602 86 0 86\"></polygon> </defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=Home transform=\"translate(-859.000000, -1527.000000)\"> <g id=The-latest transform=\"translate(0.000000, 860.000000)\"> <g id=FAQ-ico transform=\"translate(859.000000, 667.000000)\"> <g id=Group-3> <mask id=mask-2 fill=white> <use xlink:href=#path-1></use> </mask> <g id=Clip-2></g> <path d=\"M43.0003583,0.000119444444 C19.2898398,0.000119444444 -3.98148148e-05,19.2896009 -3.98148148e-05,43.0001194 C-3.98148148e-05,66.710638 19.2898398,86.0001194 43.0003583,86.0001194 C66.7104787,86.0001194 85.9999602,66.710638 85.9999602,43.0001194 C85.9999602,19.2896009 66.7104787,0.000119444444 43.0003583,0.000119444444\" id=Fill-1 fill=#91D3ED mask=url(#mask-2)></path> </g> <path d=\"M68.7583139,36.0461037 C70.4098324,36.0461037 71.7488046,34.7075296 71.7488046,33.055613 C71.7488046,31.4044926 70.4098324,30.0655204 68.7583139,30.0655204 C67.1071935,30.0655204 65.7678231,31.4044926 65.7678231,33.055613 C65.7678231,34.7075296 67.1071935,36.0461037 68.7583139,36.0461037\" id=Fill-4 fill=#000000></path> <path d=\"M19.1285898,36.0461037 C20.7801083,36.0461037 22.1190806,34.7075296 22.1190806,33.055613 C22.1190806,31.4044926 20.7801083,30.0655204 19.1285898,30.0655204 C17.4774694,30.0655204 16.1380991,31.4044926 16.1380991,33.055613 C16.1380991,34.7075296 17.4774694,36.0461037 19.1285898,36.0461037\" id=Fill-6 fill=#000000></path> <path d=\"M43.7309602,46.25295 L43.7313583,46.25295 L43.7345435,46.25295 C45.4437935,46.25295 46.9551639,45.5629593 48.2260528,44.2020889 C51.5362565,40.6609593 52.1904139,33.3696722 51.9885528,30.3931167 C51.9706361,30.1295426 51.8492009,29.883487 51.6497287,29.7094963 C51.4510528,29.5359037 51.1902657,29.4487093 50.9262935,29.4662278 L48.9375435,29.6012 C48.3884972,29.6386259 47.9732287,30.1140148 48.0110528,30.6634593 C48.1910157,33.3167185 47.4436917,39.2001537 45.3139972,41.4795519 C44.8071546,42.0210333 44.3158398,42.2635056 43.7210065,42.2654963 L43.7058769,42.2654963 C42.6894046,42.2599222 41.8799694,40.8568481 41.4873954,40.0199407 C40.6680065,38.2720704 40.3128583,36.1821907 40.4621639,33.9760519 C40.4995898,33.4266074 40.0839231,32.9516167 39.5348769,32.9141907 L37.5461269,32.7796167 C37.0050435,32.742987 36.5220898,33.156663 36.4842657,33.7065056 C36.2891731,36.5847185 36.7709324,39.3530426 37.876988,41.7128667 C39.6368028,45.4650148 42.0312657,46.25295 43.7309602,46.25295\" id=Fill-8 fill=#000000></path> <path d=\"M76.1516463,50.8483759 L74.7461833,49.43495 C74.5594519,49.2474222 74.3062296,49.141913 74.0418593,49.1411167 L74.0390722,49.1411167 C73.7758963,49.1411167 73.5230722,49.2454315 73.3367389,49.4309685 C65.4888407,57.2374593 55.0704981,61.536663 44.000387,61.536663 C32.9302759,61.536663 22.5119333,57.2374593 14.6640352,49.4309685 C14.2742481,49.0431722 13.6427852,49.0443667 13.2545907,49.4345519 L11.8483315,50.8483759 C11.6619981,51.0359037 11.5576833,51.2895241 11.5584796,51.5538944 C11.5592759,51.8182648 11.6647852,52.071487 11.852313,52.2578204 C20.452313,60.8124315 31.8692111,65.5233204 44.000387,65.5233204 C56.1307667,65.5233204 67.5484611,60.8124315 76.1476648,52.2578204 C76.5386463,51.8696259 76.5402389,51.2385611 76.1516463,50.8483759\" id=Fill-10 fill=#000000></path> </g> </g> </g> </g> </svg>";
-
-/***/ }),
-
-/***/ "./resources/assets/images/Podcast ico@2x.svg":
-/*!****************************************************!*\
-  !*** ./resources/assets/images/Podcast ico@2x.svg ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=98px height=86px viewBox=\"0 0 98 86\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>Podcast ico@2x</title> <desc>Created with Sketch.</desc> <defs> <polygon id=path-1 points=\"0.000126724138 0 98 0 98 86 0.000126724138 86\"></polygon> </defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=Home transform=\"translate(-133.000000, -1529.000000)\"> <g id=The-latest transform=\"translate(0.000000, 860.000000)\"> <g id=Podcast-ico transform=\"translate(133.000000, 669.000000)\"> <g id=Group-3> <mask id=mask-2 fill=white> <use xlink:href=#path-1></use> </mask> <g id=Clip-2></g> <path d=\"M97.6782474,82.376505 L51.0805147,1.20783168 C50.6509198,0.460653465 49.8580491,0 49.0001267,0 C48.1417819,0 47.3493336,0.460653465 46.9197388,1.20783168 L0.322006034,82.376505 C-0.107166379,83.1236832 -0.107166379,84.0449901 0.322006034,84.7921683 C0.751178448,85.5397723 1.54404914,86 2.40197155,86 L95.5978595,86 C96.4557819,86 97.2486526,85.5397723 97.6782474,84.7921683 C98.1074198,84.0449901 98.1074198,83.1236832 97.6782474,82.376505\" id=Fill-1 fill=#FEDA01 mask=url(#mask-2)></path> </g> <path d=\"M40.2485155,55.9380614 C40.4478948,56.2054277 40.760481,56.3629525 41.0924983,56.3629525 L55.9509034,56.3629525 C56.5329897,56.3629525 57.0048259,55.8886752 57.0048259,55.3028535 L57.0048259,53.1826554 C57.0048259,52.5972594 56.5329897,52.1229822 55.9509034,52.1229822 L45.3183259,52.1229822 L51.3630672,31.4565861 C51.5273862,30.8950317 51.207619,30.305804 50.6491879,30.1406158 L48.6266707,29.5424475 C48.3588603,29.4628337 48.0699293,29.4939129 47.8249293,29.6284475 C47.5790845,29.7634079 47.3974466,29.9903287 47.3180328,30.2602495 L40.0812397,55.0039822 C39.9874638,55.3245663 40.0495586,55.6702693 40.2485155,55.9380614\" id=Fill-4 fill=#000000></path> <path d=\"M67.0091052,62.8904802 L30.1995448,62.8904802 C29.6174586,62.8904802 29.1456224,63.3647574 29.1456224,63.9501535 L29.1456224,66.0707772 C29.1456224,66.6561733 29.6174586,67.1304505 30.1995448,67.1304505 L67.0091052,67.1304505 C67.5911914,67.1304505 68.0630276,66.6561733 68.0630276,66.0707772 L68.0630276,63.9501535 C68.0630276,63.3647574 67.5911914,62.8904802 67.0091052,62.8904802\" id=Fill-6 fill=#000000></path> <path d=\"M59.1449431,42.285604 C60.8916241,42.285604 62.3071328,40.8619208 62.3071328,39.1053069 C62.3071328,37.3491188 60.8916241,35.9258614 59.1449431,35.9258614 C57.3986845,35.9258614 55.9827534,37.3491188 55.9827534,39.1053069 C55.9827534,40.8619208 57.3986845,42.285604 59.1449431,42.285604\" id=Fill-8 fill=#000000></path> <path d=\"M37.6492767,42.285604 C39.3959578,42.285604 40.8114664,40.8619208 40.8114664,39.1053069 C40.8114664,37.3491188 39.3959578,35.9258614 37.6492767,35.9258614 C35.9025957,35.9258614 34.4875095,37.3491188 34.4875095,39.1053069 C34.4875095,40.8619208 35.9025957,42.285604 37.6492767,42.285604\" id=Fill-10 fill=#000000></path> </g> </g> </g> </g> </svg>";
-
-/***/ }),
-
-/***/ "./resources/assets/images/Video ico@2x.svg":
-/*!**************************************************!*\
-  !*** ./resources/assets/images/Video ico@2x.svg ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=127px height=64px viewBox=\"0 0 127 64\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>Video ico@2x</title> <desc>Created with Sketch.</desc> <defs> <polygon id=path-1 points=\"3.99371069e-05 0.0978459119 126.804708 0.0978459119 126.804708 63.5 3.99371069e-05 63.5\"></polygon> </defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=Home transform=\"translate(-481.000000, -1539.000000)\"> <g id=The-latest transform=\"translate(0.000000, 860.000000)\"> <g id=Video-ico transform=\"translate(481.000000, 679.000000)\"> <g id=Group-3 transform=\"translate(0.000000, 0.301525)\"> <mask id=mask-2 fill=white> <use xlink:href=#path-1></use> </mask> <g id=Clip-2></g> <path d=\"M63.402194,63.5 C98.41865,63.5 126.804747,35.1139025 126.804747,0.0978459119 L85.9099487,0.0978459119 C85.9099487,12.5286698 75.8330179,22.6056006 63.402194,22.6056006 C50.9713701,22.6056006 40.8948387,12.5286698 40.8948387,0.0978459119 L3.99371069e-05,0.0978459119 C3.99371069e-05,35.1139025 28.3861374,63.5 63.402194,63.5\" id=Fill-1 fill=#2961FF mask=url(#mask-2)></path> </g> <path d=\"M105.500378,16.283956 C103.845783,16.283956 102.505095,17.625044 102.505095,19.279239 C102.505095,20.933434 103.845783,22.274522 105.500378,22.274522 C107.154573,22.274522 108.495661,20.933434 108.495661,19.279239 C108.495661,17.625044 107.154573,16.283956 105.500378,16.283956\" id=Fill-4 fill=#000000></path> <path d=\"M21.3317667,16.283956 C19.6775717,16.283956 18.3364836,17.625044 18.3364836,19.279239 C18.3364836,20.933434 19.6775717,22.274522 21.3317667,22.274522 C22.986361,22.274522 24.3270497,20.933434 24.3270497,19.279239 C24.3270497,17.625044 22.986361,16.283956 21.3317667,16.283956\" id=Fill-6 fill=#000000></path> <path d=\"M49.5026031,39.4933258 L77.1710308,39.4933258 C77.7225623,39.4933258 78.1694585,39.0464296 78.1694585,38.4948981 L78.1694585,29.4179925 C78.1694585,28.8668604 77.7225623,28.4195648 77.1710308,28.4195648 L75.1921472,28.4195648 C74.6406157,28.4195648 74.1937195,28.8668604 74.1937195,29.4179925 L74.1937195,35.5175868 L52.4799145,35.5175868 L52.4799145,29.4179925 C52.4799145,28.8668604 52.0330182,28.4195648 51.4814868,28.4195648 L49.5026031,28.4195648 C48.9510717,28.4195648 48.5041755,28.8668604 48.5041755,29.4179925 L48.5041755,38.4948981 C48.5041755,39.0464296 48.9510717,39.4933258 49.5026031,39.4933258\" id=Fill-8 fill=#000000></path> <path d=\"M94.966167,37.7587374 C94.5771796,37.3677531 93.9445758,37.3661557 93.5543903,37.7551431 C85.4479563,45.818445 74.6861041,50.2590519 63.251711,50.2590519 C51.8173179,50.2590519 41.0558651,45.818445 32.9494311,37.7551431 C32.5588462,37.3661557 31.9262425,37.3677531 31.5376544,37.7587374 L30.1422519,39.161728 C29.9553462,39.3494324 29.850711,39.6038318 29.8515097,39.8686148 C29.8523085,40.1333978 29.9581418,40.3869984 30.1458462,40.5735047 C39.0026984,49.3828318 50.7601827,54.2343915 63.251711,54.2343915 C75.7436387,54.2343915 87.501123,49.3828318 96.3575758,40.5735047 C96.5456796,40.3869984 96.6515129,40.1333978 96.6523116,39.8686148 C96.6531104,39.6038318 96.5484752,39.3494324 96.3615695,39.161728 L94.966167,37.7587374 Z\" id=Fill-10 fill=#000000></path> </g> </g> </g> </g> </svg>";
 
 /***/ }),
 
@@ -404,6 +382,17 @@ module.exports = " <svg width=108px height=91px viewBox=\"0 0 108 91\" version=1
 
 /***/ }),
 
+/***/ "./resources/assets/images/podcast ico@2x.svg":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/podcast ico@2x.svg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=98px height=86px viewBox=\"0 0 98 86\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>Podcast ico@2x</title> <desc>Created with Sketch.</desc> <defs> <polygon id=path-1 points=\"0.000126724138 0 98 0 98 86 0.000126724138 86\"></polygon> </defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=Home transform=\"translate(-133.000000, -1529.000000)\"> <g id=The-latest transform=\"translate(0.000000, 860.000000)\"> <g id=Podcast-ico transform=\"translate(133.000000, 669.000000)\"> <g id=Group-3> <mask id=mask-2 fill=white> <use xlink:href=#path-1></use> </mask> <g id=Clip-2></g> <path d=\"M97.6782474,82.376505 L51.0805147,1.20783168 C50.6509198,0.460653465 49.8580491,0 49.0001267,0 C48.1417819,0 47.3493336,0.460653465 46.9197388,1.20783168 L0.322006034,82.376505 C-0.107166379,83.1236832 -0.107166379,84.0449901 0.322006034,84.7921683 C0.751178448,85.5397723 1.54404914,86 2.40197155,86 L95.5978595,86 C96.4557819,86 97.2486526,85.5397723 97.6782474,84.7921683 C98.1074198,84.0449901 98.1074198,83.1236832 97.6782474,82.376505\" id=Fill-1 fill=#FEDA01 mask=url(#mask-2)></path> </g> <path d=\"M40.2485155,55.9380614 C40.4478948,56.2054277 40.760481,56.3629525 41.0924983,56.3629525 L55.9509034,56.3629525 C56.5329897,56.3629525 57.0048259,55.8886752 57.0048259,55.3028535 L57.0048259,53.1826554 C57.0048259,52.5972594 56.5329897,52.1229822 55.9509034,52.1229822 L45.3183259,52.1229822 L51.3630672,31.4565861 C51.5273862,30.8950317 51.207619,30.305804 50.6491879,30.1406158 L48.6266707,29.5424475 C48.3588603,29.4628337 48.0699293,29.4939129 47.8249293,29.6284475 C47.5790845,29.7634079 47.3974466,29.9903287 47.3180328,30.2602495 L40.0812397,55.0039822 C39.9874638,55.3245663 40.0495586,55.6702693 40.2485155,55.9380614\" id=Fill-4 fill=#000000></path> <path d=\"M67.0091052,62.8904802 L30.1995448,62.8904802 C29.6174586,62.8904802 29.1456224,63.3647574 29.1456224,63.9501535 L29.1456224,66.0707772 C29.1456224,66.6561733 29.6174586,67.1304505 30.1995448,67.1304505 L67.0091052,67.1304505 C67.5911914,67.1304505 68.0630276,66.6561733 68.0630276,66.0707772 L68.0630276,63.9501535 C68.0630276,63.3647574 67.5911914,62.8904802 67.0091052,62.8904802\" id=Fill-6 fill=#000000></path> <path d=\"M59.1449431,42.285604 C60.8916241,42.285604 62.3071328,40.8619208 62.3071328,39.1053069 C62.3071328,37.3491188 60.8916241,35.9258614 59.1449431,35.9258614 C57.3986845,35.9258614 55.9827534,37.3491188 55.9827534,39.1053069 C55.9827534,40.8619208 57.3986845,42.285604 59.1449431,42.285604\" id=Fill-8 fill=#000000></path> <path d=\"M37.6492767,42.285604 C39.3959578,42.285604 40.8114664,40.8619208 40.8114664,39.1053069 C40.8114664,37.3491188 39.3959578,35.9258614 37.6492767,35.9258614 C35.9025957,35.9258614 34.4875095,37.3491188 34.4875095,39.1053069 C34.4875095,40.8619208 35.9025957,42.285604 37.6492767,42.285604\" id=Fill-10 fill=#000000></path> </g> </g> </g> </g> </svg>";
+
+/***/ }),
+
 /***/ "./resources/assets/images/right-bracket.svg":
 /*!***************************************************!*\
   !*** ./resources/assets/images/right-bracket.svg ***!
@@ -412,6 +401,17 @@ module.exports = " <svg width=108px height=91px viewBox=\"0 0 108 91\" version=1
 /***/ (function(module, exports) {
 
 module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=18px height=28px viewBox=\"0 0 18 28\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>Stroke 1 Copy 9</title> <desc>Created with Sketch.</desc> <g id=All-Web stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=iPhone transform=\"translate(-335.000000, -3609.000000)\" stroke=currentColor stroke-width=5> <polyline id=Stroke-1-Copy-9 points=\"337 3611 349 3623 337 3635\"></polyline> </g> </g> </svg>";
+
+/***/ }),
+
+/***/ "./resources/assets/images/video ico@2x.svg":
+/*!**************************************************!*\
+  !*** ./resources/assets/images/video ico@2x.svg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <svg width=127px height=64px viewBox=\"0 0 127 64\" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <title>Video ico@2x</title> <desc>Created with Sketch.</desc> <defs> <polygon id=path-1 points=\"3.99371069e-05 0.0978459119 126.804708 0.0978459119 126.804708 63.5 3.99371069e-05 63.5\"></polygon> </defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=Home transform=\"translate(-481.000000, -1539.000000)\"> <g id=The-latest transform=\"translate(0.000000, 860.000000)\"> <g id=Video-ico transform=\"translate(481.000000, 679.000000)\"> <g id=Group-3 transform=\"translate(0.000000, 0.301525)\"> <mask id=mask-2 fill=white> <use xlink:href=#path-1></use> </mask> <g id=Clip-2></g> <path d=\"M63.402194,63.5 C98.41865,63.5 126.804747,35.1139025 126.804747,0.0978459119 L85.9099487,0.0978459119 C85.9099487,12.5286698 75.8330179,22.6056006 63.402194,22.6056006 C50.9713701,22.6056006 40.8948387,12.5286698 40.8948387,0.0978459119 L3.99371069e-05,0.0978459119 C3.99371069e-05,35.1139025 28.3861374,63.5 63.402194,63.5\" id=Fill-1 fill=#2961FF mask=url(#mask-2)></path> </g> <path d=\"M105.500378,16.283956 C103.845783,16.283956 102.505095,17.625044 102.505095,19.279239 C102.505095,20.933434 103.845783,22.274522 105.500378,22.274522 C107.154573,22.274522 108.495661,20.933434 108.495661,19.279239 C108.495661,17.625044 107.154573,16.283956 105.500378,16.283956\" id=Fill-4 fill=#000000></path> <path d=\"M21.3317667,16.283956 C19.6775717,16.283956 18.3364836,17.625044 18.3364836,19.279239 C18.3364836,20.933434 19.6775717,22.274522 21.3317667,22.274522 C22.986361,22.274522 24.3270497,20.933434 24.3270497,19.279239 C24.3270497,17.625044 22.986361,16.283956 21.3317667,16.283956\" id=Fill-6 fill=#000000></path> <path d=\"M49.5026031,39.4933258 L77.1710308,39.4933258 C77.7225623,39.4933258 78.1694585,39.0464296 78.1694585,38.4948981 L78.1694585,29.4179925 C78.1694585,28.8668604 77.7225623,28.4195648 77.1710308,28.4195648 L75.1921472,28.4195648 C74.6406157,28.4195648 74.1937195,28.8668604 74.1937195,29.4179925 L74.1937195,35.5175868 L52.4799145,35.5175868 L52.4799145,29.4179925 C52.4799145,28.8668604 52.0330182,28.4195648 51.4814868,28.4195648 L49.5026031,28.4195648 C48.9510717,28.4195648 48.5041755,28.8668604 48.5041755,29.4179925 L48.5041755,38.4948981 C48.5041755,39.0464296 48.9510717,39.4933258 49.5026031,39.4933258\" id=Fill-8 fill=#000000></path> <path d=\"M94.966167,37.7587374 C94.5771796,37.3677531 93.9445758,37.3661557 93.5543903,37.7551431 C85.4479563,45.818445 74.6861041,50.2590519 63.251711,50.2590519 C51.8173179,50.2590519 41.0558651,45.818445 32.9494311,37.7551431 C32.5588462,37.3661557 31.9262425,37.3677531 31.5376544,37.7587374 L30.1422519,39.161728 C29.9553462,39.3494324 29.850711,39.6038318 29.8515097,39.8686148 C29.8523085,40.1333978 29.9581418,40.3869984 30.1458462,40.5735047 C39.0026984,49.3828318 50.7601827,54.2343915 63.251711,54.2343915 C75.7436387,54.2343915 87.501123,49.3828318 96.3575758,40.5735047 C96.5456796,40.3869984 96.6515129,40.1333978 96.6523116,39.8686148 C96.6531104,39.6038318 96.5484752,39.3494324 96.3615695,39.161728 L94.966167,37.7587374 Z\" id=Fill-10 fill=#000000></path> </g> </g> </g> </g> </svg>";
 
 /***/ }),
 
@@ -722,96 +722,68 @@ function _validateTabStrip() {
   return _validateTabStrip.apply(this, arguments);
 }
 
-function update_cart(cartRows) {
+function calculate_cart_qty(inputs, cb) {
   var formData = {};
+  var total_qty = 0;
+
+  if (typeof inputs !== 'undefined' && inputs.length) {
+    inputs.each(function () {
+      var input = $(this);
+      total_qty += parseInt(input.val());
+      formData[input.attr('name')] = input.val();
+    });
+  }
+
+  if (cb !== undefined && typeof cb === 'function') {
+    cb(total_qty, formData);
+  }
+}
+
+function update_cart_ajax(cartRows) {
+  var formData = {};
+  var total_qty = 0;
   var inputs = $(cartRows).find('.qty.text');
-  inputs.each(function () {
-    var input = $(this);
-    formData[input.attr('name')] = input.val();
+  calculate_cart_qty(inputs, function (qty, inputData) {
+    formData = inputData;
+    total_qty = qty;
   });
+  $('.logo-cart').attr('data-cart_count', total_qty).data('cart_count', total_qty); // $(document).find('.cart-total').text(total_qty);
+
   formData[$('#woocommerce-cart-nonce').attr('name')] = $('#woocommerce-cart-nonce').val();
-  formData[$('[name="update_cart"]').attr('name')] = $('[name="update_cart"]').attr('value');
-  console.log(formData);
-  $.post(site_url.ajaxurl, formData).done(function (res) {
-    console.log(res);
+  formData[$('[name="update_cart"]').attr('name')] = $('[name="update_cart"]').attr('value'); // console.log(formData);
+
+  $('.cart-container').addClass('updating');
+  $.post(site_url.ajaxurl, formData).done(function (res) {// console.log(res);
   });
 }
 
-$(function () {
-  $('.open-link').on('click', function () {
-    var linkName = $(this).data('link');
-    $('.offcanvas-collapse').addClass('open');
-    $('.sidenav-text').text(linkName);
-    $('header.bg-black-400 .fixed-top').addClass('d-none');
+function update_cart_items(selector, cartSubTotalObj) {
+  cartSubTotalObj.cartSubTotal = 0.00; // before calculating cart items, add qty inputs
+
+  add_qty_input_to_cart_items(); // calculate cart subtotals
+
+  $(selector).each(function () {
+    var tr = $(this);
+    var remove_link = tr.find('.remove');
+    remove_link.addClass('remove_from_cart_button');
+    var queryStr = remove_link.prop('href').split('?')[1];
+    var queryArgs = queryStr.split('&');
+    var remove_item = queryArgs[0];
+    var cart_item_key = remove_item.split('=')[1];
+    remove_link.attr('data-cart_item_key', cart_item_key);
+    var amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
+    amount = parseFloat(amount);
+    var input = tr.find('.qty.text');
+    input.attr('data-price', amount / parseInt(input.val()));
+    cartSubTotalObj.cartSubTotal += amount;
   });
-  $(document).on('click', '.offcanvas-collapse .sidenav-title .close, .close-offcanvas', function (e) {
-    $(this).closest('.offcanvas-collapse').removeClass('open');
-    $('header.bg-black-400 .fixed-top').removeClass('d-none');
-  });
-  $(document).on("click", ".choice .card-header.next-tab-bar", function (e) {
-    e.stopPropagation();
-    $(".choice").removeClass("open").addClass("collapsed");
-    $(this).closest(".choice").removeClass("collapsed").addClass("open");
-  });
-  var total = $('.logo-cart').data('cart_count') || 0;
-  $('.ajax_add_to_cart').on('click', function () {
-    var _this = $(this);
+  $(".offcanvas-collapse .woocommerce .cart-collaterals").html("<div class=\"row\"><div class=\"col-md-12 sub-totals\"><h2>Subtotal: <span class=\"float-right\"><span class=\"currency-symbol\">$</span><span class=\"price-subtotals\">".concat(cartSubTotalObj.cartSubTotal, "</span></span></h2></div></div>"));
+}
 
-    var timeout = setInterval(function () {
-      if (_this.hasClass('added')) {
-        total++;
-        $('header .fixed-top').removeClass('d-none').find('.cart-total').text(total);
-        $('.checkout-header').find('.cart-total').text(total);
-        $('.simple-logo-container').addClass('d-none');
-        $('.logo-cart').removeClass('d-none');
-        $('.section-logo-container').removeClass('d-none').find('.cart-total').text(total);
-        clearInterval(timeout);
-      }
-    }, 100); // $.post(site_url.ajaxurl, {'action': 'update_cart'}).done(function(response) {
-    // 	$('.sidenav-title').find('.choice.order').find('.container-fluid .card-text').html(response);
-    // });
-  }); // checkout tabs
-
-  $(document).on('click', '.next-tab', function (e) {
-    $('.choice').removeClass('open').addClass('collapsed');
-    $(this).closest('.choice').next('.choice').removeClass('collapsed').addClass('open');
-  }); // tabs validation
-
-  validateTab('.choice.shipping');
-  validateTabStrip('.choice.billing'); // Ajax form on checkout form
-
-  var checkoutForm = $('form.checkout-ajax');
-
-  if (checkoutForm.find('#payment').length) {
-    checkoutForm.find('#payment .payment_methods').remove();
-  }
-
-  $(document.body).trigger('updated_checkout');
-  var submitBtn = $(checkoutForm).find('#place_order');
-  var submitBtnHtml = submitBtn.html();
-  var submitOrderContainer = $('.choice.submit-order');
-  checkoutForm.ajaxForm({
-    beforeSubmit: function beforeSubmit(formData, $form, options) {
-      submitBtn.prop('disabled', true).html('Please Wait...');
-    },
-    success: function success(response, textStatus, jqXHR, $form) {
-      $(checkoutForm).find('#place_order').prop('disabled', false).html(submitBtnHtml);
-      var backBtn = "<button class=\"btn rounded-0 bg-light text-dark btn-block py-3 my-auto font-weight-bold close-offcanvas\" style=\"font-size: inherit;\" onclick=\"location.reload();\">BACK TO SHOP</button>";
-      submitOrderContainer.find('.card-body').addClass('d-flex h-100 flex-column').append(backBtn);
-      var email = submitOrderContainer.data('email');
-
-      if (response.result == 'success') {
-        var responseMsg = "<div class=\"text-center\">\n\t\t\t\t\t<h2>Order Confirmed!</h2>\n\t\t\t\t\t<h6 style=\"font-size: 18px;margin-bottom: .5em;\" class=\"font-weight-bold\">Your stuff is on it's way.</h6>\n\t\t\t\t\t<p>An order confirmation email has been</p>\n\t\t\t\t\t<p>sent to {{email}}</p>\n\t\t\t\t</div>";
-        responseMsg = responseMsg.replace('{{email}}', email);
-        submitOrderContainer.find('.container-fluid').removeClass('lg:mt-16').addClass('mt-auto').html(responseMsg);
-        checkoutForm.resetForm();
-      } else {
-        $(checkoutForm).find('#result').html(response.messages);
-      }
-    }
-  });
+function add_qty_input_to_cart_items() {
   var quantityArrows = "<div class=\"quantity-nav row\">\n\t\t<div class=\"quantity-button quantity-up col-1\">+</div>\n\t\t<div class=\"quantity-value col-1\">1</div>\n\t\t<div class=\"quantity-button quantity-down col-1\">-</div>\n\t</div>";
   var productQtyContainer = '.offcanvas-collapse .woocommerce table.shop_table .product-quantity .quantity';
+  $(productQtyContainer).find('.quantity-nav').remove();
   $(productQtyContainer).append(quantityArrows);
   $(productQtyContainer).each(function () {
     var spinner = $(this),
@@ -857,32 +829,196 @@ $(function () {
       spinner.find("input").trigger("change");
     });
   });
-  var cartRows = '.offcanvas-collapse .woocommerce table.shop_table tbody tr.cart_item';
-  var cartSubTotal = 0.00;
-  $(cartRows).each(function () {
-    var tr = $(this);
-    var amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
-    amount = parseFloat(amount);
-    var input = tr.find('.qty.text');
-    input.attr('data-price', amount / parseInt(input.val()));
-    cartSubTotal += amount;
+}
+
+function refresh_cart(cb) {
+  $.post(site_url.ajaxurl, {
+    'action': 'refresh_cart'
+  }).done(function (response) {
+    response = JSON.parse(response);
+
+    if (cb !== undefined && typeof cb === 'function') {
+      cb(response);
+    }
   });
-  $(cartRows).find('.qty.text').on('change input', function (e) {
-    update_cart(cartRows);
-    var cartSubTotal = 0;
-    var inputVal = $(e.target).val();
-    var inputPrice = $(e.target).data('price');
-    var subTotal = parseInt(inputVal) * parseInt(inputPrice);
-    $(e.target).closest('tr').find('.product-subtotal .amount').html('<span class="woocommerce-Price-currencySymbol">$</span>' + subTotal);
-    $(cartRows).each(function () {
-      var tr = $(this);
-      var amount = tr.find('.product-subtotal .amount').text().replace(/\$/g, '');
-      amount = parseFloat(amount);
-      cartSubTotal += amount;
+}
+
+function fetch_ajax_submitted_data(data) {
+  var submittedFormData = {};
+  var chunks = data.split('&');
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = chunks[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var chunk = _step.value;
+      var queryArgs = chunk.split('=');
+      submittedFormData[queryArgs[0]] = queryArgs[1];
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+        _iterator["return"]();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return submittedFormData;
+}
+
+function remove_payment_methods_from_checkout(checkoutForm) {
+  if (checkoutForm.find('#payment').length) {
+    checkoutForm.find('#payment .payment_methods').remove();
+  }
+}
+
+$(function () {
+  $('.open-link').on('click', function () {
+    var linkName = $(this).data('link');
+    $('.offcanvas-collapse').addClass('open');
+    $('.sidenav-text').text(linkName);
+    $('header.bg-black-400 .fixed-top').addClass('d-none');
+  });
+  $(document).on('click', '.offcanvas-collapse .sidenav-title .close, .close-offcanvas', function (e) {
+    $(this).closest('.offcanvas-collapse').removeClass('open');
+    $('header.bg-black-400 .fixed-top').removeClass('d-none');
+  });
+  $(document).on("click", ".choice .card-header.next-tab-bar", function (e) {
+    e.stopPropagation();
+    $(".choice").removeClass("open").addClass("collapsed");
+    $(this).closest(".choice").removeClass("collapsed").addClass("open");
+  }); // Ajax form on checkout form
+
+  var checkoutForm = $('form.checkout-ajax');
+  $(document.body).on('updated_checkout', function () {
+    var submitBtn = $(checkoutForm).find('#place_order');
+    var submitBtnHtml = submitBtn.html();
+    var submitOrderContainer = $('.choice.submit-order');
+    checkoutForm.ajaxForm({
+      beforeSubmit: function beforeSubmit(formData, $form, options) {
+        submitBtn.prop('disabled', true).html('Please Wait...');
+      },
+      success: function success(response, textStatus, jqXHR, $form) {
+        $(checkoutForm).find('#place_order').prop('disabled', false).html(submitBtnHtml);
+        var backBtn = "<button class=\"btn rounded-0 bg-light text-dark btn-block py-3 my-auto font-weight-bold close-offcanvas\" style=\"font-size: inherit;\" onclick=\"location.reload();\">BACK TO SHOP</button>";
+        submitOrderContainer.find('.card-body button.close-offcanvas').remove();
+        submitOrderContainer.find('.card-body').addClass('d-flex h-100 flex-column').append(backBtn);
+        var email = submitOrderContainer.data('email');
+
+        if (response.result == 'success') {
+          var responseMsg = "<div class=\"text-center\">\n\t\t\t\t\t\t<h2>Order Confirmed!</h2>\n\t\t\t\t\t\t<h6 style=\"font-size: 18px;margin-bottom: .5em;\" class=\"font-weight-bold\">Your stuff is on it's way.</h6>\n\t\t\t\t\t\t<p>An order confirmation email has been</p>\n\t\t\t\t\t\t<p>sent to {{email}}</p>\n\t\t\t\t\t</div>";
+          responseMsg = responseMsg.replace('{{email}}', email);
+          submitOrderContainer.find('.container-fluid').removeClass('lg:mt-16').addClass('mt-auto').html(responseMsg);
+          checkoutForm.resetForm();
+        } else {
+          $(checkoutForm).find('#result').html(response.messages);
+        }
+      }
     });
-    $('.sub-totals').find('.price-subtotals').text(cartSubTotal);
+  }); // All about cart
+
+  var cartSubTotalObj = {
+    cartSubTotal: 0.00
+  };
+  var cartRows = '.offcanvas-collapse .woocommerce table.shop_table tbody tr.cart_item';
+  update_cart_items(cartRows, cartSubTotalObj); // when quantity change
+
+  var qty_inputs = $(cartRows).find('.qty.text');
+  $(document).on('change input', qty_inputs, function (e) {
+    if ($(e.target).hasClass('input-text qty text')) {
+      console.log(e);
+      update_cart_ajax(cartRows);
+      cartSubTotalObj.cartSubTotal = 0;
+      var inputVal = $(e.target).val();
+      var inputPrice = $(e.target).data('price');
+      var subTotal = (parseFloat(inputVal) * parseFloat(inputPrice)).toFixed(2);
+      $(e.target).closest('tr').find('.product-subtotal .amount').html('<span class="woocommerce-Price-currencySymbol">$</span>' + subTotal);
+      update_cart_items(cartRows, cartSubTotalObj);
+      $('.sub-totals').find('.price-subtotals').text(cartSubTotalObj.cartSubTotal);
+    }
   });
-  $(".offcanvas-collapse .woocommerce").append("<div class=\"row\"><div class=\"col-md-12 sub-totals\"><h2>Subtotal: <span class=\"float-right\"><span class=\"currency-symbol\">$</span><span class=\"price-subtotals\">".concat(cartSubTotal, "</span></span></h2></div></div>"));
+  var total = $('.logo-cart').data('cart_count') || 0;
+  $(document).ajaxComplete(function (e, xhr, settings) {
+    var submittedData = fetch_ajax_submitted_data(settings.data);
+    calculate_cart_qty($(cartRows).find('.qty.text'), function (qty) {
+      total = qty;
+
+      if (total == 0) {
+        $('.choice .card-header:not(.choice.order .card-header)').removeClass('next-tab-bar');
+        $('.choice.order').find('button.next-tab').prop('disabled', true);
+      }
+
+      $(document).find('.cart-total').text(total);
+    });
+
+    if (settings.url.includes('add_to_cart')) {
+      refresh_cart(function (response) {
+        $('.choice.order').find('.card-header').addClass('next-tab-bar');
+        $('.choice.order').find('button.btn-block').prop('disabled', false).addClass('next-tab'); // next tab
+
+        $('.choice.order').next('.choice.shipping').find('.card-header').addClass('next-tab-bar');
+        $('header .fixed-top').removeClass('d-none').find('.cart-total').text(total);
+        $('.simple-logo-container').addClass('d-none');
+        $('.logo-cart').removeClass('d-none');
+        $('.section-logo-container').removeClass('d-none').find('.cart-total').text(total);
+        $('.checkout-ajax').find('.choice.order').find('.container-fluid .cart-container').html(response.cart);
+        $('.checkout-ajax').find('.checkout-container').html(response.checkout);
+        $('.cart-container').removeClass('updating');
+        update_cart_items(cartRows, cartSubTotalObj);
+        remove_payment_methods_from_checkout(checkoutForm);
+        $(document.body).trigger('updated_checkout');
+      });
+    }
+
+    if (settings.url.includes('remove_from_cart')) {
+      refresh_cart(function (response) {
+        $('.checkout-ajax').find('.choice.order').find('.container-fluid .cart-container').html(response.cart);
+        $('.checkout-ajax').find('.checkout-container').html(response.checkout);
+        $('.cart-container').removeClass('updating');
+        update_cart_items(cartRows, cartSubTotalObj);
+        remove_payment_methods_from_checkout(checkoutForm);
+        $(document.body).trigger('updated_checkout');
+      });
+    }
+
+    if ('update_cart' in submittedData) {
+      refresh_cart(function (response) {
+        $('.checkout-ajax').find('.choice.order').find('.container-fluid .cart-container').html(response.cart);
+        $('.checkout-ajax').find('.checkout-container').html(response.checkout);
+        $('.cart-container').removeClass('updating');
+        update_cart_items(cartRows, cartSubTotalObj);
+        remove_payment_methods_from_checkout(checkoutForm);
+        $(document.body).trigger('updated_checkout');
+      });
+    }
+  });
+  $('.ajax_add_to_cart').on('click', function () {
+    var _this = $(this); // let timeout = setInterval(function() {
+    // 	if (_this.hasClass('added')) {
+    // 		clearInterval(timeout);
+    // 	}
+    // }, 100);
+
+  }); // checkout tabs
+
+  $(document).on('click', '.next-tab', function (e) {
+    $('.choice').removeClass('open').addClass('collapsed');
+    $(this).closest('.choice').next('.choice').removeClass('collapsed').addClass('open');
+  }); // tabs validation
+
+  validateTab('.choice.shipping');
+  validateTabStrip('.choice.billing'); // clean checkout
+
+  remove_payment_methods_from_checkout(checkoutForm);
+  $(document.body).trigger('updated_checkout');
 });
 
 /***/ }),

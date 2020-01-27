@@ -8,6 +8,7 @@ web/app/uploads/GeoLite2-Country.mmdb
 !web/app/uploads/.gitkeep
 !web/app/uploads/.gitkeep
 web/app/uploads/wc-logs
+web/app/uploads/cache/*
 web/app/uploads/wc-logs/*
 web/app/debug.log
 # plugins

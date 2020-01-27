@@ -84,7 +84,9 @@ use App\Controllers\FrontPage;
 										<h2 class="card-title text-left">Your Order</h2>
 										<!-- Text -->
 										<div class="card-text overflow-hidden">
-											{!! do_shortcode('[woocommerce_cart]') !!}
+											<div class="cart-container">
+												{!! do_shortcode('[woocommerce_cart]') !!}												
+											</div>
 											<button class="btn rounded-0 bg-black-400 text-light btn-block {{!$is_empty_cart ? 'next-tab' : ''}}" {{ $is_empty_cart ? 'disabled' : '' }} type="button">NEXT</button>
 										</div>
 										
@@ -92,7 +94,7 @@ use App\Controllers\FrontPage;
 								</div>
 							</div>
 							<div class="choice border-4 collapsed shipping">
-								<div class="card-header p-lg-0"><div class="title text-uppercase">Shipping</div></div>
+								<div class="card-header p-lg-0 {{!$is_empty_cart ? 'next-tab-bar' : ''}}"><div class="title text-uppercase">Shipping</div></div>
 								<div class="card-body position-relative">
 									<div class="text-dark sidenav-title text-capitalize position-absolute"><span class="close">&times;</span></div>
 									<div class="container-fluid lg:mt-16">
@@ -205,7 +207,9 @@ use App\Controllers\FrontPage;
 										<div class="card-text overflow-hidden">
 											<div class="container-fluid">
 												<div id="result"></div>
-												{{do_action( 'woocommerce_checkout_order_review' )}}
+												<div class="checkout-container">
+													{{ do_action( 'woocommerce_checkout_order_review' ) }}													
+												</div>
 												<input type="hidden" name="payment_method" value="stripe">
 												<input type="hidden" name="wc-stripe-payment-token" value="1">
 											</div>

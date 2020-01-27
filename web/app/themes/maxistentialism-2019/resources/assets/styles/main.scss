@@ -510,12 +510,14 @@ a:hover {
 	font-weight: bold;
 
 }
-
+.shop_table.woocommerce-checkout-review-order-table {
+	width: 100% !important;
+}
 .offcanvas-collapse .woocommerce table.shop_table .product-name a {
     pointer-events: none;
 }
 .offcanvas-collapse .woocommerce table.shop_table thead, 
-.offcanvas-collapse .woocommerce table.shop_table .product-remove, 
+// .offcanvas-collapse .woocommerce table.shop_table .product-remove, 
 .offcanvas-collapse .woocommerce table.shop_table .product-thumbnail a,
 .offcanvas-collapse .woocommerce table.shop_table .product-price,
 .offcanvas-collapse .woocommerce table.shop_table tr:not(.cart_item) {
@@ -573,4 +575,17 @@ a:hover {
 }
 .offcanvas-collapse .woocommerce table.shop_table tr:nth-of-type(8n) .product-thumbnail:before {
 	background-image: url('../images/Bullet-8.svg');
+}
+
+.offcanvas-collapse .cart-container.updating {
+	position: relative;
+}
+.offcanvas-collapse .cart-container.updating:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255, 0.5);
+    top: 0;
+    left: 0;
 }

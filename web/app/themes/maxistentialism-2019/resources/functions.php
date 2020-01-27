@@ -110,12 +110,19 @@ function remove_menus() {
 }
 add_action('admin_menu', 'remove_menus');
 
-function update_cart() {
-    echo do_shortcode('[woocommerce_cart]');
+function refresh_cart_cb() {
+    ob_start();
+
+    do_action( 'woocommerce_checkout_order_review' );
+
+    $checkout = ob_get_clean();
+    
+    $response = ['cart' => do_shortcode('[woocommerce_cart]'), 'checkout' => $checkout];
+    echo json_encode($response);
     exit;
 }
-add_action( 'wp_ajax_update_cart', 'update_cart', 10 );
-add_action( 'wp_ajax_nopriv_update_cart', 'update_cart', 10 );
+add_action( 'wp_ajax_refresh_cart', 'refresh_cart_cb', 10 );
+add_action( 'wp_ajax_nopriv_refresh_cart', 'refresh_cart_cb', 10 );
 
 add_filter( 'woocommerce_order_button_text', function() {
     return 'SUBMIT ORDER';
